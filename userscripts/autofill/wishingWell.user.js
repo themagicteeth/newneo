@@ -4,7 +4,7 @@
 // @description    Fills in Amount of donation and item
 // @version        1.0.0
 // @author         -
-// @match          *://neopets.com/wishing.phtml*
+// @match          *://www.neopets.com/wishing.phtml*
 // @grant          none
 // ==/UserScript==
 
@@ -13,5 +13,5 @@
 const BET = 21;
 const ITEM = 'Usukicon Y23 Goodie Bag';
 
-$("input[name='donation']").val(bet);
-$("input[name='wish']").val(item);
+$("input[name='donation']").val(BET);
+$("input[name='wish']").val(ITEM);
