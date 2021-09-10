@@ -5,7 +5,7 @@
 // @match       *://www.neopets.com/objects.phtml?type=shop&obj_type=73
 // @match       *://www.neopets.com/haggle.phtml
 // @match       *://www.neopets.com/haggle.phtml*
-// @require     autoBuy.js
+// @require     https://raw.githubusercontent.com/themagicteeth/newneo/main/userscripts/autobuy/autoBuy.js
 // @grant       none
 // @version     1.0
 // @author      -
