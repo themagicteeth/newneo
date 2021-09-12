@@ -1,0 +1,1485 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<List>
+ <Entry>
+  <Title>200m Peanut Dash</Title>
+  <Detail>Auto Max Power</Detail>
+  <Scan>D0 01 12 2A</Scan>
+  <Write>D0 01 12 00</Write>
+ </Entry>
+ <Entry>
+  <Title>200m Peanut Dash</Title>
+  <Detail>Can't Hit Obstacles</Detail>
+  <Scan>69 00 00 5D AF 03 2A</Scan>
+  <Write>69 00 00 10 65 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>200m Peanut Dash</Title>
+  <Detail>Always Catch Peanut</Detail>
+  <Scan>B4 01 12 8E</Scan>
+  <Write>B4 01 12 00</Write>
+ </Entry>
+ <Entry>
+  <Title>200m Peanut Dash</Title>
+  <Detail>Always Jump Combo 5</Detail>
+  <Scan>5D F6 04 2C 9E 08 60 EF 03 A0 4F F6 04</Scan>
+  <Write>5E EF 03 60 F2 03 68 EF 03 10 01 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>200m Peanut Dash</Title>
+  <Detail>Get 280 points when you catch the peanut</Detail>
+  <Scan>60 F2 04 60 A4 01 24 64 A3 46 F3 04 01 73 D5</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 25 98 02 73 D5</Write>
+ </Entry>
+ <Entry>
+  <Title>Advert Attack</Title>
+  <Detail>Go button stay in top left corner</Detail>
+  <Scan>74 01 96 17</Scan>
+  <Write>74 01 3E 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Advert Attack</Title>
+  <Detail>No adverts</Detail>
+  <Scan>67 12 9D 02 00 66</Scan>
+  <Write>67 12 99 02 00 66</Write>
+ </Entry>
+ <Entry>
+  <Title>Assignment 53</Title>
+  <Detail>Invincible (walk into enemies to kill them) Pt. 1</Detail>
+  <Scan>24 00 61 A4 06</Scan>
+  <Write>24 01 61 A4 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Assignment 53</Title>
+  <Detail>Invincible (walk into enemies to kill them) Pt. 2</Detail>
+  <Scan>66 A4 06 D1 A1</Scan>
+  <Write>66 A4 06 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Assignment 53</Title>
+  <Detail>Player can fly by holding up</Detail>
+  <Scan>12 28 00 00 5E 9A 0D 60 B6 07 66 DE 15 90 68 9A 0D 5E 9D 0D 27 68 9D 0D 5E A1 0D 60 88 18</Scan>
+  <Write>12 00 00 00 5E 9A 0D 60 B6 07 66 DE 15 90 68 9A 0D 5E 9D 0D 27 68 9D 0D 5E A1 0D 60 87 18</Write>
+ </Entry>
+ <Entry>
+  <Title>Assignment 53</Title>
+  <Detail>Projectiles and enemies go through you</Detail>
+  <Scan>D0 30 D0 66 ?? 02 66 ?? ?? 12 71 00 00</Scan>
+  <Write>47 30 D0 66 ?? 02 66 ?? ?? 12 71 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Gummy Dice</Title>
+  <Detail>Always score 900 points</Detail>
+  <Scan>96 04 00 04 01 08 2B 4E 96 05 00 07 01 00 00 00 4E 96 04 00 04 01 08 2B 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 0D</Scan>
+  <Write>96 05 00 07 84 03 00 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Gummy Dice</Title>
+  <Detail>Always score 9563 points</Detail>
+  <Scan>96 04 00 04 01 08 2B 4E 96 05 00 07 01 00 00 00 4E 96 04 00 04 01 08 2B 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 0D</Scan>
+  <Write>96 05 00 07 5B 25 00 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Gummy Dice</Title>
+  <Detail>Always score 7394 points</Detail>
+  <Scan>96 04 00 04 01 08 2B 4E 96 05 00 07 01 00 00 00 4E 96 04 00 04 01 08 2B 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 0D</Scan>
+  <Write>96 05 00 07 E2 1C 00 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Marblemen</Title>
+  <Detail>Unlimited Lives</Detail>
+  <Scan>96 0C 00 07 FF FF FF FF 07 01 00 00 00 08 01 1C 96 02 00 08 2D</Scan>
+  <Write>96 0C 00 07 00 00 00 00 07 01 00 00 00 08 01 1C 96 02 00 08 2D</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Revenge</Title>
+  <Detail>Earn Points Attacking Same Spot</Detail>
+  <Scan>9D 02 00 AC 01 96 0B</Scan>
+  <Write>99 02 00 00 00 96 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Attack of the Revenge</Title>
+  <Detail>Never Game Over</Detail>
+  <Scan>9D 02 00 28 00 96 04 00 04 01 08 23</Scan>
+  <Write>99 02 00 28 00 96 04 00 04 01 08 23</Write>
+ </Entry>
+ <Entry>
+  <Title>Barf Boat</Title>
+  <Detail>Max Multiplier/Can't lose</Detail>
+  <Scan>D3 62 04 61 F3 0A</Scan>
+  <Write>D3 24 04 61 F3 0A</Write>
+ </Entry>
+ <Entry>
+  <Title>Berry Bash</Title>
+  <Detail>Meters Never Decrease</Detail>
+  <Scan>D0 66 81 07 24 64</Scan>
+  <Write>47 66 81 07 24 64</Write>
+ </Entry>
+ <Entry>
+  <Title>Berry Bash</Title>
+  <Detail>No Game Over</Detail>
+  <Scan>D0 30 D0 26 68 A1</Scan>
+  <Write>47 30 D0 26 68 A1</Write>
+ </Entry>
+ <Entry>
+  <Title>Berry Bash</Title>
+  <Detail>Custom Point Gain (Change the second byte in the aob to any score you want - Default: 30) </Detail>
+  <Scan>24 00 75 D6 10 3D 00 00 09 D3</Scan>
+  <Write>24 1E 75 D6 10 A9 00 00 09 D3</Write>
+ </Entry>
+ <Entry>
+  <Title>Biscuit Brigade</Title>
+  <Detail>Infinite Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 02 08 3C 4E 96 02 00 08 3D</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 02 08 3C 4E 96 02 00 08 3D</Write>
+ </Entry>
+ <Entry>
+  <Title>Biscuit Brigade</Title>
+  <Detail>Buying adds Money Pt. 1</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 04 04 0B 96 09 00 07 01 00 00 00 04 02 08 18</Scan>
+  <Write>96 0B 00 06 00 00 00 00 00 00 00 00 04 04 02 96 09 00 07 01 00 00 00 04 02 08 18</Write>
+ </Entry>
+ <Entry>
+  <Title>Biscuit Brigade</Title>
+  <Detail>Buying adds Money Pt. 2</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 04 05 0B 96 09 00 07 01 00 00 00 04 02 08 15</Scan>
+  <Write>96 0B 00 06 00 00 00 00 00 00 00 00 04 05 02 96 09 00 07 01 00 00 00 04 02 08 15</Write>
+ </Entry>
+ <Entry>
+  <Title>Bouncy Supreme</Title>
+  <Detail>Trajectory Always Visible</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 00 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 50 4F</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Bouncy Supreme</Title>
+  <Detail>Coins Visible</Detail>
+  <Scan>96 04 00 04 01 08 00 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 96 05 00 07 03 00 00 00 48 12 12</Scan>
+  <Write>96 04 00 04 01 08 00 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E 96 05 00 07 03 00 00 00 48 12 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Bruno's Backyard Breakaway</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 0E 00 06 00 00 00 00 00 00 00 00 04 01 09 34 01 52</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Bruno's Backyard Breakaway</Title>
+  <Detail>Become Unbeatable</Detail>
+  <Scan>96 06 00 04 01 08 22 05 01</Scan>
+  <Write>96 06 00 04 01 08 22 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Bubble Beams</Title>
+  <Detail>Auto Collect Bonuses</Detail>
+  <Scan>52 12 9D 02 00 12</Scan>
+  <Write>52 12 99 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Bubble Beams</Title>
+  <Detail>Auto Complete Level (Use caution and mind the timing!)</Detail>
+  <Scan>9D 02 00 55 03</Scan>
+  <Write>99 02 00 43 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Carnival of Terror</Title>
+  <Detail>Infinite Ammo</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 2A</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 64 00 00 00 04 01 08 2A</Write>
+ </Entry>
+ <Entry>
+  <Title>Carnival of Terror</Title>
+  <Detail>Infinite Health</Detail>
+  <Scan>96 0E 00 07 F6 FF FF FF 07 01 00 00 00 04 01 08 0A</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 7F 7F 7F 7F 04 01 08 0A</Write>
+ </Entry>
+ <Entry>
+  <Title>Carnival of Terror</Title>
+  <Detail>Infinite Time</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 40</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 7F 7F 7F 7F 04 01 08 40</Write>
+ </Entry>
+ <Entry>
+  <Title>Carnival of Terror</Title>
+  <Detail>Auto Destroy Robots (Use with 'Infinite Time')</Detail>
+  <Scan>96 13 00 07 C2 01 00 00 07 D1 00 00 00 07 02 00 00 00 04 01 08 4F 52 87 01 00 02 17 96 0B 00 04 02 07 01 00 00 00 04 01 08 4E 52 12 9D 02 00 21 00 96 13 00 07</Scan>
+  <Write>96 06 00 04 01 08 2E 05 01 4F 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 11 4E 96 02 00 08 2D 52 17 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 2F 52 17 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Cave Glider</Title>
+  <Detail>Freeze Timer</Detail>
+  <Scan>66 A4 08 C1</Scan>
+  <Write>66 A4 08 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Caves and Corridors of Mystery Island</Title>
+  <Detail>Unlimited Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 2B</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 01 08 2B</Write>
+ </Entry>
+ <Entry>
+  <Title>Caves and Corridors of Mystery Island</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 04 00 04 01 08 1D 4E 12 12 9D 02 00 29 01</Scan>
+  <Write>96 04 00 04 01 08 1D 4E 12 02 9D 02 00 29 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Chariot Chase</Title>
+  <Detail>Invincible</Detail>
+  <Scan>5E E2 05 27 68 E2 05</Scan>
+  <Write>5E E2 05 26 68 E2 05</Write>
+ </Entry>
+ <Entry>
+  <Title>Chemistry for Beginners</Title>
+  <Detail>Unstable Compounds Doesn't Explode</Detail>
+  <Scan>FE 96 0D 00 06</Scan>
+  <Write>FE 3E 0D 00 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Chemistry for Beginners</Title>
+  <Detail>Infinite Elements</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07</Scan>
+  <Write>99 02 00 22 00 FF FF FF 07</Write>
+ </Entry>
+ <Entry>
+  <Title>Chia Bomber 2</Title>
+  <Detail>Enemies don't move</Detail>
+  <Scan>96 09 00 04 01 08 05 07 06 00 00 00</Scan>
+  <Write>96 09 00 04 01 08 05 07 00 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Clara on Ice</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 02 00 08 01 1C 11 12 9D 02 00 0D</Scan>
+  <Write>96 02 00 08 01 1C 11 12 9D 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Clara on Ice</Title>
+  <Detail>Super Jump (Change 5th byte for desire height - Default: 25)</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 08 2E 1C 0B 47</Scan>
+  <Write>96 05 00 07 19 00 00 00 99 02 00 02 00 02 1C 02 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Clara on Ice</Title>
+  <Detail>Freeze Timer (Use with caution)</Detail>
+  <Scan>50 1D 96 04 00 08 14 08 12</Scan>
+  <Write>02 1D 96 04 00 08 14 08 12</Write>
+ </Entry>
+ <Entry>
+  <Title>Clockwork Codebreaker</Title>
+  <Detail>Any guess is correct </Detail>
+  <Scan>60 90 07 D3 66 F8 11 66 8B 12 60 A2 07 D3 66 F8 11</Scan>
+  <Write>60 A2 07 D3 66 F8 11 02 02 02 60 A2 07 D3 66 F8 11</Write>
+ </Entry>
+ <Entry>
+  <Title>Cloud Raiders</Title>
+  <Detail>Invincible</Detail>
+  <Scan>90 4F E9 04 01</Scan>
+  <Write>02 4F E9 04 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Cloud Raiders</Title>
+  <Detail>Ship Follows Mouse (PART 1)</Detail>
+  <Scan>60 8A 02 60 FD 14 60 FE 14 4F CC 0B 02 5D B0 08 4F B0 08 00</Scan>
+  <Write>60 10 66 9A 0B 60 FE 14 60 FD 14 4F EB 04 02 24 00 29 20 29</Write>
+ </Entry>
+ <Entry>
+  <Title>Cloud Raiders</Title>
+  <Detail>Ship Follows Mouse (PART 2)</Detail>
+  <Scan>5E DA 04 D2 68 DA 04 5E E3 04 D1 68 E3 04</Scan>
+  <Write>5E C6 11 D2 68 C6 11 5E C7 11 D1 68 C7 11</Write>
+ </Entry>
+ <Entry>
+  <Title>Coal War Tactics</Title>
+  <Detail>Opponent's Grid Same As Yours</Detail>
+  <Scan>D0 66 81 01 D0 D0 66 7F 66 91 01 46 92 01 00 D0 66 7F 66 91 01 46 93 01 00 D0 66</Scan>
+  <Write>D0 66 81 01 5D 8D 01 D0 66 8E 01 46 8D 01 01 66 8F 01 46 90 01 01 29 10 11 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Coal War Tactics</Title>
+  <Detail>Hitting enemy booby trap gives you points (Be careful not to exceed max possible score)</Detail>
+  <Scan>2C AE 01 D0 66 74 90</Scan>
+  <Write>2C AE 01 D0 66 74 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Coal War Tactics</Title>
+  <Detail>Start with 3 clear row powerups</Detail>
+  <Scan>66 81 01 2C 9D 01 D2 A0 66 84 01 27</Scan>
+  <Write>66 81 01 2C 9D 01 D2 A0 66 84 01 26</Write>
+ </Entry>
+ <Entry>
+  <Title>Coconut Shy</Title>
+  <Detail>Auto Hit Coconut</Detail>
+  <Scan>9D 02 00 1A 00 17</Scan>
+  <Write>99 02 00 20 00 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Cooty Wars</Title>
+  <Detail>Never Miss</Detail>
+  <Scan>9D 02 00 EA 01 96 04 00 04 01 08 07</Scan>
+  <Write>9D 02 00 00 00 96 04 00 04 01 08 07</Write>
+ </Entry>
+ <Entry>
+  <Title>Crisis Courier</Title>
+  <Detail>Never Die</Detail>
+  <Scan>96 06 00 04 01 08 0F 05 01</Scan>
+  <Write>96 06 00 04 01 08 0F 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Crisis Courier</Title>
+  <Detail>Click to be a Mutant</Detail>
+  <Scan>4E 96 02 00 08 2C 4E 4F</Scan>
+  <Write>4E 96 02 00 08 58 4E 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>Crisis Courier</Title>
+  <Detail>Pass Through Buildings / Invincible</Detail>
+  <Scan>96 06 00 04 01 08 0E 05 01</Scan>
+  <Write>99 02 00 47 00 08 0E 05 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Crisis Courier</Title>
+  <Detail>Kill Any Enemy Regardless of Type</Detail>
+  <Scan>9D 02 00 19 00 96 06 00 04</Scan>
+  <Write>99 02 00 00 00 96 06 00 04</Write>
+ </Entry>
+ <Entry>
+  <Title>Dar-BLAT!</Title>
+  <Detail>Always get Best Score</Detail>
+  <Scan>9D 02 00 0D 00 96 05 00 07 58 02 00 00</Scan>
+  <Write>9D 02 00 00 00 96 05 00 07 58 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Darigan Dodgeball</Title>
+  <Detail>Freeze Objects (Note you will still lose if you touch the objects)</Detail>
+  <Scan>5D A4 05 24 01</Scan>
+  <Write>47 A4 05 24 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Darigan Dodgeball</Title>
+  <Detail>Game only ends when pressing quit</Detail>
+  <Scan>D0 30 60 8C 05</Scan>
+  <Write>47 30 60 8C 05</Write>
+ </Entry>
+ <Entry>
+  <Title>Darigan Dodgeball</Title>
+  <Detail>Freeze objects &amp; Invincibility (Note the game will still end if you release your mouse press)</Detail>
+  <Scan>60 89 05 12 12 01 00 60 C6 01 60 94 05 60 B3 05 46 CC 05 02 76 2A 11 0F 00 00 29</Scan>
+  <Write>60 94 05 60 9E 0A 61 91 0A 60 94 05 60 9F 0A 61 92 0A 5E A7 05 60 A7 05 24 01 47</Write>
+ </Entry>
+ <Entry>
+  <Title>Deckball</Title>
+  <Detail>All Goals are Yours</Detail>
+  <Scan>96 02 00 08 1C 4E 96 02 00 08 EA</Scan>
+  <Write>96 02 00 08 1B 4E 96 02 00 08 EA</Write>
+ </Entry>
+ <Entry>
+  <Title>Defender Trainer</Title>
+  <Detail>Always Correct</Detail>
+  <Scan>9D 02 00 B7 02 96 04 00 08 53 08 53</Scan>
+  <Write>9D 02 00 00 00 96 04 00 08 53 08 53</Write>
+ </Entry>
+ <Entry>
+  <Title>Destruct-O-Match III</Title>
+  <Detail>Always Score 2500 Points</Detail>
+  <Scan>60 C6 01 60 C7 01 60 D1 01 66 E3 07 46 A0 08 00 4F A1 08 01</Scan>
+  <Write>60 C6 01 25 C4 13 4F A1 08 01 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Destruct-O-Match III</Title>
+  <Detail>Destroy single tiles</Detail>
+  <Scan>60 CB 02 66 8A 07 24 01</Scan>
+  <Write>60 CB 02 66 8A 07 24 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Dice of Destiny</Title>
+  <Detail>Numbers Always Clickable Pt. 1</Detail>
+  <Scan>60 A0 04 D2 27 61 8F 0B</Scan>
+  <Write>60 A0 04 D2 26 61 8F 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Dice of Destiny</Title>
+  <Detail>Numbers Always Clickable Pt. 2</Detail>
+  <Scan>60 B2 04 14 AE 00 00</Scan>
+  <Write>60 B2 04 14 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Dice of Destiny</Title>
+  <Detail>Numbers Always Clickable Pt. 3</Detail>
+  <Scan>27 68 C1 04</Scan>
+  <Write>26 68 C1 04</Write>
+ </Entry>
+ <Entry>
+  <Title>Dubloon Disaster</Title>
+  <Detail>Remove Mines</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 7E 52</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Dubloon Disaster</Title>
+  <Detail>Teleport coins to you</Detail>
+  <Scan>96 05 00 07 02 00 00 00 0D 3E 4F</Scan>
+  <Write>96 05 00 07 FF 00 00 00 0C 3E 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>Dueling Decks</Title>
+  <Detail>All Stats Are 16</Detail>
+  <Scan>D0 30 5D 0C D0 66 AC 02 12 09 00 00 D0 66 AD 02 82 10 08 00 00 60 93 01 46 C6 02 00 82 46 0C 01 D1 46 44 01 48</Scan>
+  <Write>D0 30 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 24 10 48</Write>
+ </Entry>
+ <Entry>
+  <Title>Dueling Decks</Title>
+  <Detail>100 Points Per Card in Easy Mode</Detail>
+  <Scan>60 FC 06</Scan>
+  <Write>60 F9 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Dueling Decks</Title>
+  <Detail>Always Correct</Detail>
+  <Scan>10 12 00 00 D1 62 04 66 B6 0A D2</Scan>
+  <Write>10 1E 00 00 D1 62 04 66 B6 0A D2</Write>
+ </Entry>
+ <Entry>
+  <Title>Dueling Decks</Title>
+  <Detail>Game Never Ends</Detail>
+  <Scan>0E 09 00 00 D0 4F B4 06 00</Scan>
+  <Write>0E 00 00 00 D0 4F B4 06 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Escape to Kreludor</Title>
+  <Detail>Destroy All Enemies When Player Moved</Detail>
+  <Scan>4E 49 12 9D 02 00 12 00 96</Scan>
+  <Write>4E 49 12 99 02 00 00 00 96</Write>
+ </Entry>
+ <Entry>
+  <Title>Escape to Kreludor</Title>
+  <Detail>Enemies Don't Move (Part 1/2)</Detail>
+  <Scan>0C 47 4F 96 08 00 04 01 08 08</Scan>
+  <Write>0C 47 4F 99 02 00 27 00 08 08</Write>
+ </Entry>
+ <Entry>
+  <Title>Escape to Kreludor</Title>
+  <Detail>Enemies Don't Move (Part 2/2) (Optional)</Detail>
+  <Scan>50 4F 96 08 00 04 01 08 10</Scan>
+  <Write>50 4F 99 02 00 45 00 08 10</Write>
+ </Entry>
+ <Entry>
+  <Title>Escape to Kreludor</Title>
+  <Detail>Enemies Don't Follow (Cloaked)</Detail>
+  <Scan>9D 02 00 31 01</Scan>
+  <Write>99 02 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Escape to Kreludor</Title>
+  <Detail>Invincible (Use with 'Enemies Don't Follow')</Detail>
+  <Scan>9D 02 00 F0 00 96</Scan>
+  <Write>99 02 00 F0 00 96</Write>
+ </Entry>
+ <Entry>
+  <Title>Evil Fuzzles from Beyond the Stars</Title>
+  <Detail>Freeze Fuzzles Movement &amp; Size</Detail>
+  <Scan>96 08 00 04 01 08 0B 04 02 08 09 4E 96 02 00 08 0A 4E 96 02 00 08 44 4E 96 04 00 04 01 08 45 4E 0B</Scan>
+  <Write>96 04 00 04 01 08 47 96 05 00 07 46 00 00 00 4F 96 04 00 04 01 08 48 96 05 00 07 46 00 00 00 4F 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Evil Fuzzles from Beyond the Stars</Title>
+  <Detail>Center Spawn Fuzzles</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 08 1C 1C 96 02 00 08 1D 52 96 04 00 04 01 08 1F 4E 0C 96 07 00 07 01 00 00 00 08 1C 1C 96 02 00 08 1E 52 87 01</Scan>
+  <Write>96 04 00 04 01 08 1F 4E 96 05 00 07 02 00 00 00 0D 87 01 00 07 17 96 04 00 04 01 08 20 4E 96 05 00 07 02 00 00 00 0D 87 01 00 06 17 99 02 00 49 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Evil Fuzzles from Beyond the Stars</Title>
+  <Detail>Always Red Fuzzles</Detail>
+  <Scan>9D 02 00 4B 00 96 0B 00 06</Scan>
+  <Write>99 02 00 4B 00 96 0B 00 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Evil Fuzzles from Beyond the Stars</Title>
+  <Detail>Freeze Bonus Position</Detail>
+  <Scan>96 04 00 04 01 08 6B 4E 96 07 00 08 22 07 2C 01 00 00 30 96 05 00 07 64 00 00 00 47 4F 96 04 00 04 01 08 6B 4E 96 07 00 08 23 07</Scan>
+  <Write>96 04 00 04 01 08 6B 4E 96 07 00 08 22 07 C8 01 00 00 4F 96 04 00 04 01 08 6B 4E 96 07 00 08 23 07 C8 00 00 00 4F 99 02 00 0F 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Evil Fuzzles from Beyond the Stars</Title>
+  <Detail>Earn 1k Virtucreds Per Hit</Detail>
+  <Scan>8C 4E 96 04 00 04 01 08 68 4E 96 05 00 07 02 00 00</Scan>
+  <Write>8C 4E 96 05 00 07 E8 03 00 00 47 4F 99 02 00 04 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Faerie Cloud Racers</Title>
+  <Detail>Invincible Player and NPC (This will never end the round allowing you to constantly increase your score)</Detail>
+  <Scan>F1 CC 27 F0 DD</Scan>
+  <Write>47 CC 27 F0 DD</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Herder</Title>
+  <Detail>Freeze balthazar in top left corner</Detail>
+  <Scan>B4 00 96 07 00 04 02 07 05 00 00</Scan>
+  <Write>B4 00 96 05 00 07 FD FF FF FF 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Herder</Title>
+  <Detail>Balthazar does...Nothing</Detail>
+  <Scan>96 02 00 08 07 4E 96 02 00 08 08</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Herder 2</Title>
+  <Detail>Balthazar is ALWAYS frozen</Detail>
+  <Scan>27 61 91 08</Scan>
+  <Write>26 61 91 08</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Potato Counter</Title>
+  <Detail>Always Correct V1</Detail>
+  <Scan>14 0B 00 00 5D E7 0B</Scan>
+  <Write>14 00 00 00 5D E7 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Extreme Potato Counter</Title>
+  <Detail>Always Correct V2</Detail>
+  <Scan>4F E8 0B 00</Scan>
+  <Write>4F E7 0B 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Eye of the Storm</Title>
+  <Detail>Time doesn't decrease</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 0B</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 01 08 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Eye of the Storm</Title>
+  <Detail>Transparent Tiles</Detail>
+  <Scan>9D 02 00 1E 00 96 04 00 04 01 08 06</Scan>
+  <Write>9D 02 00 00 00 96 04 00 04 01 08 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Bubbles</Title>
+  <Detail>Every bubble is a nova</Detail>
+  <Scan>96 05 00 07 FF FF FF FF 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Scan>
+  <Write>96 05 00 07 00 00 00 00 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Bubbles</Title>
+  <Detail>Every bubble is a rainbow</Detail>
+  <Scan>96 05 00 07 FF FF FF FF 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Scan>
+  <Write>96 05 00 07 01 00 00 00 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Bubbles</Title>
+  <Detail>Bubbles never move down</Detail>
+  <Scan>96 05 00 07 FF FF FF FF 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Scan>
+  <Write>96 05 00 07 02 00 00 00 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Bubbles</Title>
+  <Detail>Every time you push a button, all the level bubbles change to the same colour</Detail>
+  <Scan>96 05 00 07 FF FF FF FF 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Scan>
+  <Write>96 05 00 07 03 00 00 00 87 01 00 05 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Caves 2</Title>
+  <Detail>Walk Thru Walls</Detail>
+  <Scan>96 02 00 04 02 4E 96 02 00 08 D2</Scan>
+  <Write>96 02 00 04 02 4E 96 02 00 08 25</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Caves 2</Title>
+  <Detail>Never Die</Detail>
+  <Scan>9D 02 00 56 00 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 94</Scan>
+  <Write>99 02 00 56 00 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 94</Write>
+ </Entry>
+ <Entry>
+  <Title>Faerie Cloud Racers</Title>
+  <Detail>Invincible</Detail>
+  <Scan>12 12 9D 02 00 AE</Scan>
+  <Write>12 12 99 02 00 AE</Write>
+ </Entry>
+ <Entry>
+  <Title>Feed Florg</Title>
+  <Detail>Infinite Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 02 08 26</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 02 08 26</Write>
+ </Entry>
+ <Entry>
+  <Title>Flycatcher</Title>
+  <Detail>Flies cannot escape till you kill all of them (You can't lose)</Detail>
+  <Scan>04 01 08 35 52 17 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 36 52 17 4F</Scan>
+  <Write>04 01 08 30 52 17 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 2F 52 17 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>Flycatcher</Title>
+  <Detail>Bullet Pass Through Rocks</Detail>
+  <Scan>9D 02 00 03 02</Scan>
+  <Write>99 02 00 03 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Flycatcher</Title>
+  <Detail>No Death From Bees</Detail>
+  <Scan>9D 02 00 8C 01</Scan>
+  <Write>99 02 00 8C 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Flycatcher</Title>
+  <Detail>No Death From Centipedes</Detail>
+  <Scan>9D 02 00 05 02</Scan>
+  <Write>99 02 00 05 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Freaky Factory</Title>
+  <Detail>Waste meter never goes up</Detail>
+  <Scan>04 01 08 06 4E 50</Scan>
+  <Write>04 01 08 06 4E 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Freaky Factory</Title>
+  <Detail>Any blob fills any container</Detail>
+  <Scan>49 96 04 00 04 03 08 19</Scan>
+  <Write>49 96 04 00 08 19 08 19</Write>
+ </Entry>
+ <Entry>
+  <Title>Freaky Factory</Title>
+  <Detail>Remove Thief</Detail>
+  <Scan>4E 96 04 00 04 01 08 10 4E 0B</Scan>
+  <Write>4E 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Freaky Factory</Title>
+  <Detail>Freeze Timer</Detail>
+  <Scan>03 29 00 87 00 96 08</Scan>
+  <Write>03 29 00 87 00 3E 08</Write>
+ </Entry>
+ <Entry>
+  <Title>Freaky Factory</Title>
+  <Detail>Blob adds to every color (Use with Any blob fills any container &amp; Waste meter never goes up)</Detail>
+  <Scan>96 04 00 04 01 08 3D 4E 96 04 00 04 01 08 05 4E 96 02 00 08 40 4E 96 05 00 07 05 00 00 00 0B 67 12 9D 02 00 77 01 96 04 00 04 01 08 3C 4E 96 04 00 04 01 08 05 4E 96 02 00 08 21 4E 96 02 00 08 47 4E 67 96 04 00 04 01 08 3C 4E 96 04 00 04 01 08 05 4E 96 02 00 08 21 4E 96 02 00 08 48 4E 48 10 12 9D 02 00 3C 00 96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 49 4E 96 09 00 07 02 00 00 00 04 01 08 05 4E 96 02 00 08 21 4E 96 02 00 08 4A 52 17</Scan>
+  <Write>96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 49 4E 96 09 00 07 02 00 00 00 04 01 08 05 4E 96 02 00 08 21 4E 96 02 00 08 4A 52 17 96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 49 4E 96 09 00 07 02 00 00 00 04 01 08 05 4E 96 02 00 08 23 4E 96 02 00 08 4A 52 17 96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 49 4E 96 09 00 07 02 00 00 00 04 01 08 05 4E 96 02 00 08 24 4E 96 02 00 08 4A 52 17 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 4B 52 17 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Gadgadsgame</Title>
+  <Detail>Always Match</Detail>
+  <Scan>96 04 00 04 02 08 06 4E</Scan>
+  <Write>96 02 00 05 01 3E 06 4E</Write>
+ </Entry>
+ <Entry>
+  <Title>Gadgadsgame</Title>
+  <Detail>High Bomb Frequency Pt 2</Detail>
+  <Scan>9D 02 00 37 00 96 0B</Scan>
+  <Write>99 02 00 00 00 96 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>Gadgadsgame</Title>
+  <Detail>High Bomb Frequency Pt 1</Detail>
+  <Scan>9D 02 00 35 00 96 04 00 04 01 08 12</Scan>
+  <Write>99 02 00 00 00 96 04 00 04 01 08 12</Write>
+ </Entry>
+ <Entry>
+  <Title>Gadgadsgame</Title>
+  <Detail>Level doesn't change</Detail>
+  <Scan>96 0E 00 07 01 00 00 00 07 01 00 00 00 04 01 08 10 4E 96 02 00 08 01 52 17</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Remove Guards</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 9E 52</Scan>
+  <Write>99 02 00 0D 00 00 00 00 00 00 00 00 04 01 08 9E 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Walk Over Traps (Does NOT need to be disabled to enter secret areas)</Detail>
+  <Scan>96 03 00 09 4F 01 1C 96 0C</Scan>
+  <Write>3E 03 00 09 4F 01 1C 96 0C</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Walk Through Walls/Obstacles</Detail>
+  <Scan>96 05 00 09 81 01 05 00 1D</Scan>
+  <Write>96 05 00 09 81 01 05 01 1D</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 DC 52 17</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Prevent Player From 'Falling' (Use with Invincible AoB) </Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 DA 52 17</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Grand Theft Ummagine</Title>
+  <Detail>Player Speed</Detail>
+  <Scan>96 09 00 04 01 08 10 07 06 00 00 00</Scan>
+  <Write>96 09 00 04 01 08 10 07 09 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Hannah and the Wardrobe of Adventure</Title>
+  <Detail>Control Ball With Mouse in Minigame</Detail>
+  <Scan>07 12 20 00 00</Scan>
+  <Write>07 12 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Hasee Bounce</Title>
+  <Detail>Unlimited Time</Detail>
+  <Scan>4E 96 02 00 08 3D 52 </Scan>
+  <Write>4E 47 02 00 08 3D 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Hasee Bounce</Title>
+  <Detail>Auto Grab Items</Detail>
+  <Scan>9D 02 00 23 00 96 05</Scan>
+  <Write>99 02 00 00 00 96 05</Write>
+ </Entry>
+ <Entry>
+  <Title>Hasee Bounce</Title>
+  <Detail>Avoid Bad Grabs</Detail>
+  <Scan>9D 02 00 5E 01</Scan>
+  <Write>99 02 00 5E 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Hasee Bounce</Title>
+  <Detail>Letter Colors Do Not Matter</Detail>
+  <Scan>9D 02 00 24 07</Scan>
+  <Write>99 02 00 4F 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Hot Dog Hero</Title>
+  <Detail>Character Follows Mouse</Detail>
+  <Scan>96 04 00 08 CE 08 22 1C 96 02 00 08 58 4E 96 02 00 08 07 4E 96 02 00 08 22 1C 96 02 00 08 07 4E 47 96 07 00 08 CF 07 15 00 00 00 22 0B 1D 96 04 00 08 D0 08 22 1C 96 02 00 08 58 4E 96 02 00 08 06 4E 96 02 00 08 22 1C 96 02 00 08 06 4E 47 96 07 00 08 CF 07</Scan>
+  <Write>96 02 00 08 22 1C 96 02 00 08 58 4E 96 02 00 08 06 96 07 00 08 CF 07 14 00 00 00 22 96 02 00 08 22 1C 96 02 00 08 06 4E 0B 4F 96 02 00 08 22 1C 96 02 00 08 58 4E 96 02 00 08 07 96 07 00 08 CF 07 15 00 00 00 22 96 02 00 08 22 1C 96 02 00 08 07 4E 0B 4F 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Hot Dog Hero</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 08 BE 3D 17</Scan>
+  <Write>3E 0B 00 06 00 00 00 00 00 00 00 00 08 BE 3D 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Hungry Skeith</Title>
+  <Detail>Double the value of jelly items Pt 1</Detail>
+  <Scan>96 0C 00 07 03 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Scan>
+  <Write>96 0C 00 07 06 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Hungry Skeith</Title>
+  <Detail>Double the value of jelly items Pt 2</Detail>
+  <Scan>96 0C 00 07 05 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Scan>
+  <Write>96 0C 00 07 0A 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Hungry Skeith</Title>
+  <Detail>Double the value of jelly items Pt 3</Detail>
+  <Scan>96 0C 00 07 08 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Scan>
+  <Write>96 0C 00 07 10 00 00 00 07 01 00 00 00 08 00 1C 96 02 00 08 7B 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Ice Cream Machine</Title>
+  <Detail>Bad Scoops don't hit</Detail>
+  <Scan>96 08 00 04 01 08 11 04 01 08 0A</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Imperial Exam</Title>
+  <Detail>Answers are always correct</Detail>
+  <Scan>9D 02 00 20 00 96 02 00 05 00</Scan>
+  <Write>9D 02 00 20 00 96 02 00 05 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Always Tutorial Mode / Always Show Arrows</Detail>
+  <Scan>D0 30 D0 66 D9 09 2C BD 09</Scan>
+  <Write>26 48 D0 66 D9 09 2C BD 09</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Ingredients Never Decrease</Detail>
+  <Scan>66 90 11 C1</Scan>
+  <Write>66 90 11 C0</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Cookwares Never Burn</Detail>
+  <Scan>D0 66 D6 10 4F E1</Scan>
+  <Write>10 0E 00 00 4F E1</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Servings Never Cool</Detail>
+  <Scan>D0 66 F5 10 11 0D 00 00</Scan>
+  <Write>47 66 F5 10 11 0D 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Time Remaining Set To 4 Hours (Always on Day 1)</Detail>
+  <Scan>D0 30 5D 10 D0 66 D9 09</Scan>
+  <Write>2D 59 48 10 D0 66 D9 09</Write>
+ </Entry>
+ <Entry>
+  <Title>Island Chef Academy</Title>
+  <Detail>Custom Point Gain (10)</Detail>
+  <Scan>D0 30 D0 66 E2 10</Scan>
+  <Write>24 0A 48 66 E2 10</Write>
+ </Entry>
+ <Entry>
+  <Title>Itchy Invasion</Title>
+  <Detail>Itch-O-Meter doesn't Increase Pt. 1</Detail>
+  <Scan>96 0B 00 04 03 06 99 99 27 40 9A 99 99 99 0C 47 4F</Scan>
+  <Write>96 0B 00 04 03 06 99 99 27 40 9A 99 99 99 0C 0B 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>Itchy Invasion</Title>
+  <Detail>Itch-O-Meter doesn't Increase Pt. 2</Detail>
+  <Scan>96 05 00 07 0F 00 00 00 48</Scan>
+  <Write>96 05 00 07 0F E8 03 00 48</Write>
+ </Entry>
+ <Entry>
+  <Title>Itchy Invasion</Title>
+  <Detail>Get more Bonus</Detail>
+  <Scan>96 09 00 07 0F 00 00 00 04 01 08 0B 4E 0B</Scan>
+  <Write>96 09 00 07 0F 00 00 00 04 01 08 0B 4E 0A</Write>
+ </Entry>
+ <Entry>
+  <Title>Itchy Invasion</Title>
+  <Detail>Unlimited Pest-B-Gone</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 28</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 01 08 28</Write>
+ </Entry>
+ <Entry>
+  <Title>Itchy Invasion</Title>
+  <Detail>Shoot Anywhere to Kill</Detail>
+  <Scan>52 12 9D 02 00 C4 02</Scan>
+  <Write>52 12 99 02 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Jelly Blobs of Doom</Title>
+  <Detail>Go through bigger jellies</Detail>
+  <Scan>99 02 00 F2 00 96 04 00 04 02 08 09 4E 96 02 00 08 31 4E 12</Scan>
+  <Write>99 02 00 F2 00 96 04 00 04 02 08 09 4E 96 02 00 08 31 4E 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Kiko Match II</Title>
+  <Detail>All tiles are one color</Detail>
+  <Scan>96 1D 00 08 09 08 0A 08 0B 08 0C 08 0D 08 0E 08 0F 08 10 08 11 08 12 08 13 08 14 07 0B 00 00 00</Scan>
+  <Write>96 1D 00 08 14 08 14 08 14 08 14 08 14 08 14 08 14 08 14 08 14 08 14 08 14 08 14 07 0B 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Kiko Match II</Title>
+  <Detail>Always Correct (regardless of color)</Detail>
+  <Scan>9D 02 00 03 01 96 04 00 04 01 08 23</Scan>
+  <Write>99 02 00 00 00 96 04 00 04 01 08 23</Write>
+ </Entry>
+ <Entry>
+  <Title>Korbats  Lab</Title>
+  <Detail>Infinite Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 27</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 01 08 27</Write>
+ </Entry>
+ <Entry>
+  <Title>Legends of Pinball</Title>
+  <Detail>Prevent ball from falling through flippers</Detail>
+  <Scan>2F 1B A2 75 D5</Scan>
+  <Write>24 64 A0 75 D5</Write>
+ </Entry>
+ <Entry>
+  <Title>Legends of Pinball</Title>
+  <Detail>No speed cap for ball</Detail>
+  <Scan>0E 0F 00 00 60</Scan>
+  <Write>10 0F 00 00 60</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Infinite Life</Detail>
+  <Scan>96 0E 00 07 01 00 00 00 07 01 00 00 00 04 01 08 1A</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 01 08 1A </Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Invincible / No Knockback</Detail>
+  <Scan>96 0B 00 08 1C 07 01 00 00 00 04 01 08 07</Scan>
+  <Write>3E 0B 00 08 1C 07 01 00 00 00 04 01 08 07</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Infinite Power</Detail>
+  <Scan>96 05 00 07 12 00 00 00 0B 4F 4F 96</Scan>
+  <Write>96 05 00 07 00 00 00 00 0B 4F 4F 96</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Cybunny never morph</Detail>
+  <Scan>96 05 00 07 F4 01 00 00 48</Scan>
+  <Write>96 05 00 07 00 00 00 00 48</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Kill Cybunny In 1 Shot</Detail>
+  <Scan>9D 02 00 3F 00 96 0B</Scan>
+  <Write>99 02 00 00 00 96 0B</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Kill Scorchio In 1 Shot</Detail>
+  <Scan>9D 02 00 12 00 96 09 00 04 02 08 8B 07 02 00 00 00 4F</Scan>
+  <Write>99 02 00 58 00 96 09 00 04 02 08 8B 07 02 00 00 00 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Scorchio Doesn't Breath Fire</Detail>
+  <Scan>9D 02 00 12 00 17 96 04 00 04 01 08 0B 4E 96 05 00 07 26</Scan>
+  <Write>99 02 00 12 00 17 96 04 00 04 01 08 0B 4E 96 05 00 07 26</Write>
+ </Entry>
+ <Entry>
+  <Title>MAGAX II</Title>
+  <Detail>Spawn Custom Jubjubs Amount (Change 16th byte, defualt 100)</Detail>
+  <Scan>96 02 00 04 05 30 87 01 00 06 17 96 09 00 06 00 00 00 00 00 00 00 00 87 01 00 04</Scan>
+  <Write>96 02 00 04 05 30 87 01 00 04 17 96 05 00 07 64 00 00 00 02 02 02 02 87 01 00 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Meecra Chase II</Title>
+  <Detail>Walls/Red Neggs DO NOT effect you</Detail>
+  <Scan>9D 02 00 0D 00 96 08 00 04 01 08 0A 04 01 08 08</Scan>
+  <Write>99 02 00 0D 00 96 08 00 04 01 08 0A 04 01 08 08</Write>
+ </Entry>
+ <Entry>
+  <Title>Meepit vs Feepit</Title>
+  <Detail>AI Doesn't Block</Detail>
+  <Scan>96 06 00 04 01 08 12 05 01</Scan>
+  <Write>96 06 00 04 01 08 12 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Meepit vs Feepit</Title>
+  <Detail>AI Kick/Punch Pt 1</Detail>
+  <Scan>96 06 00 04 01 08 10 05 01</Scan>
+  <Write>96 06 00 04 01 08 10 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Meepit vs Feepit</Title>
+  <Detail>AI Kick/Punch Pt 2</Detail>
+  <Scan>96 06 00 04 01 08 11 05 01</Scan>
+  <Write>96 06 00 04 01 08 11 05 00 </Write>
+ </Entry>
+ <Entry>
+  <Title>Meepit vs Feepit</Title>
+  <Detail>12 points per attack</Detail>
+  <Scan>96 0E 00 07 06 00 00 00 07 01 00 00 00 04 02 08 63</Scan>
+  <Write>96 0E 00 07 0C 00 00 00 07 01 00 00 00 04 02 08 63</Write>
+ </Entry>
+ <Entry>
+  <Title>Mootix Drop</Title>
+  <Detail>100% ring accuracy</Detail>
+  <Scan>96 07 00 08 52 07 ?? 00 00</Scan>
+  <Write>96 07 00 08 52 07 FF FF 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Mootix Drop</Title>
+  <Detail>Landing anywhere OFF target gives you #x multiplier (last bit)</Detail>
+  <Scan>1E 00 00 00 4F 96 09 00 04 03 08 53 07 07</Scan>
+  <Write>FF FF 00 00 4F 96 09 00 04 03 08 53 07 07</Write>
+ </Entry>
+ <Entry>
+  <Title>Mop 'n' Bop</Title>
+  <Detail>Dirt Meter Never Increases</Detail>
+  <Scan>96 09 00 06 00 00 00 00 00 00 00 00 48 12 9D</Scan>
+  <Write>96 09 00 06 00 00 00 00 00 00 00 00 01 12 9D</Write>
+ </Entry>
+ <Entry>
+  <Title>Mutant Graveyard of Doom II</Title>
+  <Detail>Invincible</Detail>
+  <Scan>D0 30 60 9A 01</Scan>
+  <Write>26 48 60 9A 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Mutant Graveyard of Doom II</Title>
+  <Detail>Walk Through Objects</Detail>
+  <Scan>11 0A 01 00</Scan>
+  <Write>11 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Mutant Graveyard of Doom II</Title>
+  <Detail>Dropped Tombstone Kills Enemies</Detail>
+  <Scan>12 15 00 00 60 ED</Scan>
+  <Write>12 00 00 00 60 ED</Write>
+ </Entry>
+ <Entry>
+  <Title>Mutant Graveyard of Doom II</Title>
+  <Detail>Max Candle Brightness</Detail>
+  <Scan>24 04 0E 09</Scan>
+  <Write>24 04 0E 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Mutant Graveyard of Doom II</Title>
+  <Detail>Never Slow Down Below Original Speed</Detail>
+  <Scan>D9 01 0C 0D</Scan>
+  <Write>D9 01 0C 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Mynci's Beach Volleyball</Title>
+  <Detail>Score when the ball lands on your side</Detail>
+  <Scan>96 05 00 07 40 01 00 00 67 12</Scan>
+  <Write>96 05 00 07 40 01 00 00 48 12</Write>
+ </Entry>
+ <Entry>
+  <Title>Neopian Battlefield Legends</Title>
+  <Detail>Unlimited Coins</Detail>
+  <Scan>11 1A 00 00 D0 D0 66 D6 12 96</Scan>
+  <Write>11 00 00 00 D0 D0 66 D6 12 96</Write>
+ </Entry>
+ <Entry>
+  <Title>Neopian Battlefield Legends</Title>
+  <Detail>Enemies die in one hit</Detail>
+  <Scan>0D 19 00 00 5D</Scan>
+  <Write>0D 00 00 00 5D</Write>
+ </Entry>
+ <Entry>
+  <Title>Neverending Boss Battle</Title>
+  <Detail>Invincibility</Detail>
+  <Scan>9D 02 00 3E 01 96 06 00 04 01 08 09 05 00</Scan>
+  <Write>99 02 00 3E 01 96 06 00 04 01 08 09 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Nimmo's Pond 2</Title>
+  <Detail>Infinite Life</Detail>
+  <Scan>96 04 00 08 02 08 02 1C 96 02 00 04 02 47 1D 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 03</Scan>
+  <Write>96 04 00 08 02 08 02 1C 96 02 00 04 02 0B 1D 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Nimmo's Pond 2</Title>
+  <Detail>Infinite Paddle Power</Detail>
+  <Scan>96 04 00 08 08 08 08 1C 96 02 00 04 02 47 1D 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 03</Scan>
+  <Write>96 04 00 08 08 08 08 1C 96 02 00 04 02 0B 1D 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Nimmo's Pond 2</Title>
+  <Detail>Stop Paddle Power "Regeneration" (with Infinite Paddle Power)</Detail>
+  <Scan>96 07 00 08 2A 07 01 00 00 00 4F 96 02 00 08 05 1C 96 0D 00 08 2B</Scan>
+  <Write>96 07 00 08 2A 07 00 00 00 00 4F 96 02 00 08 05 1C 96 0D 00 08 2B</Write>
+ </Entry>
+ <Entry>
+  <Title>Nova Defender</Title>
+  <Detail>GOD MODE / Invincible</Detail>
+  <Scan>D0 26 68 F5 03</Scan>
+  <Write>D0 27 68 F5 03</Write>
+ </Entry>
+ <Entry>
+  <Title>Nova Defender</Title>
+  <Detail>Always Super Shot (360 shot)</Detail>
+  <Scan>0E 1E 00 00 5D A4 06 2A D5 66 A4 06 93</Scan>
+  <Write>0E 00 00 00 5D A4 06 2A D5 66 A4 06 91</Write>
+ </Entry>
+ <Entry>
+  <Title>Pakiko</Title>
+  <Detail>Unlimited Marbles</Detail>
+  <Scan>D0 2A 63 07 66 41</Scan>
+  <Write>10 0B 00 00 66 41</Write>
+ </Entry>
+ <Entry>
+  <Title>Pakiko</Title>
+  <Detail>5 Marbles Per Shot Pt 1</Detail>
+  <Scan>27 61 1D F0 46</Scan>
+  <Write>26 61 1D F0 46</Write>
+ </Entry>
+ <Entry>
+  <Title>Pakiko</Title>
+  <Detail>5 Marbles Per Shot Pt 2</Detail>
+  <Scan>D0 46 96 01 00 29 F0 8B 04</Scan>
+  <Write>5D 0D 66 0D 66 0E 26 61 1D</Write>
+ </Entry>
+ <Entry>
+  <Title>Pakiko</Title>
+  <Detail>5 Marbles Per Shot Pt 3</Detail>
+  <Scan>F0 FC 01 5D 0D 66 0D 66 0E 27 61 1D F0 FD 01 D0 46 69 00 29</Scan>
+  <Write>5D 0D 66 0D 66 0E 27 61 1D D0 46 69 00 29 D0 46 69 00 29 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Cannonball</Title>
+  <Detail>Never Miss Pt 1</Detail>
+  <Scan>96 04 00 04 01 08 20 4E 96 02 00 08 31 4E 96 09 00 06 00 00 00 00 00 00 00 00 48 12 9D 02 00 4F 00 96 08 00 04 01 08 5D 04 01 08 5E 4E 96 0D 00 08 5D 08 5D 07 03 00 00 00 04 02 08 22 52 4F 96 04 00 04 01</Scan>
+  <Write>96 04 00 04 01 08 51 4E 96 02 00 08 52 49 12 4C 12 9D 02 00 3E 00 96 04 00 04 01 08 20 4E 96 06 00 08 30 04 01 08 0A 4E 96 02 00 08 6B 4E 96 02 00 08 30 4E 4F 96 04 00 04 01 08 20 4E 96 06 00 08 31 04 01</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Cannonball</Title>
+  <Detail>Never Miss Pt 2</Detail>
+  <Scan>08 5D 4E 96 06 00 08 30 04 01 08 20 4E 96 02 00 08 30 4E 4F 96 04 00 04 01 08 5D 4E 96 07 00 08 31 07 19 00 00 00 4F 99 02 00 18 00 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 5D 4E 96 02 00 08 5F 52 17</Scan>
+  <Write>08 0A 4E 96 02 00 08 6B 4E 96 02 00 08 31 4E 4F 96 04 00 04 01 08 4C 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Cannonball</Title>
+  <Detail>Stay on same level</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 75 52 17</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Cannonball</Title>
+  <Detail>Unlimited Tries</Detail>
+  <Scan>96 05 00 07 01 00 00 00 0B 4F 96 04 00 04 01 08 07</Scan>
+  <Write>96 05 00 07 01 00 00 00 0C 4F 96 04 00 04 01 08 07</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Cannonball</Title>
+  <Detail>Always show trajectory</Detail>
+  <Scan>9D 02 00 16 00 96 08 00 04 01 08 85 04 01 08 85 4E 96 05 00 07 01 00 00 00 47 4F</Scan>
+  <Write>9D 02 00 16 00 96 08 00 04 01 08 85 04 01 08 85 4E 96 05 00 07 00 00 00 00 47 4F</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Plunge</Title>
+  <Detail>Auto Collect All Items</Detail>
+  <Scan>11 01 12 19</Scan>
+  <Write>11 01 12 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Plunge</Title>
+  <Detail>Shots Never Decreases (Regular Mode)</Detail>
+  <Scan>0A 93 D7 D2</Scan>
+  <Write>0A 02 D7 D2</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Rescue</Title>
+  <Detail>Never Die / Walk on lava</Detail>
+  <Scan>96 0B 00 06 00 00 00 00 00 00 00 00 08 01 1C 96 02 00 08 5A 52 17</Scan>
+  <Write>99 02 00 11 00 00 00 00 00 00 00 00 08 01 1C 96 02 00 08 5A 52 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Sitter</Title>
+  <Detail>Unlimited Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 02 08 48</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 02 08 48</Write>
+ </Entry>
+ <Entry>
+  <Title>Petpet Sitter</Title>
+  <Detail>Score never decreases</Detail>
+  <Scan>96 0E 00 07 FB FF FF FF 07 01 00 00 00 04 ?? 08 47</Scan>
+  <Write>96 0E 00 07 00 00 00 00 07 01 00 00 00 04 ?? 08 47</Write>
+ </Entry>
+ <Entry>
+  <Title>Piper Panic</Title>
+  <Detail>Time bonus always max Pt 1</Detail>
+  <Scan>4E 96 04 00 08 38 04 01 4F</Scan>
+  <Write>02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Piper Panic</Title>
+  <Detail>Time bonus always max Pt 2</Detail>
+  <Scan>96 05 00 07 E8 03 00 00 0C 0D</Scan>
+  <Write>96 05 00 07 E8 03 00 00 0C 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Raiders of Maraqua</Title>
+  <Detail>Infinite Lives</Detail>
+  <Scan>96 0E 00 07 FF FF FF FF 07 01 00 00 00 04 01 08 15</Scan>
+  <Write>96 0E 00 07 01 00 00 00 07 01 00 00 00 04 01 08 15</Write>
+ </Entry>
+ <Entry>
+  <Title>Raiders of Maraqua</Title>
+  <Detail>Untouchable</Detail>
+  <Scan>00 96 0D 00 06 00 00 00 00 00 00 00 00 04 ?? 08 ?? 52</Scan>
+  <Write>00 47 0D 00 06 00 00 00 00 00 00 00 00 04 ?? 08 ?? 52</Write>
+ </Entry>
+ <Entry>
+  <Title>Ready to Roll</Title>
+  <Detail>Auto Collect Coins</Detail>
+  <Scan>52 12 9D 02 00 4F</Scan>
+  <Write>52 12 99 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Ready to Roll</Title>
+  <Detail>Invincible</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 24 4E 96 02 00 08 29 52 17</Scan>
+  <Write>99 02 00 13 00 00 00 00 00 00 00 00 04 01 08 24 4E 96 02 00 08 29 52 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Revel Roundup</Title>
+  <Detail>Infinite time</Detail>
+  <Scan>96 04 00 04 01 08 0B</Scan>
+  <Write>96 04 00 04 01 08 25</Write>
+ </Entry>
+ <Entry>
+  <Title>Revel Roundup</Title>
+  <Detail>Always able to pick up items you need</Detail>
+  <Scan>96 06 00 04 01 08 25 05 01</Scan>
+  <Write>96 06 00 04 01 08 25 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Rink Runner</Title>
+  <Detail>Remove note collision checking Pt 1</Detail>
+  <Scan>52 4C 12 9D 02 00 12</Scan>
+  <Write>52 4C 12 99 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Rink Runner</Title>
+  <Detail>Accidentals act as normal notes Pt 1</Detail>
+  <Scan>9D 02 00 45 00 96 08</Scan>
+  <Write>99 02 00 45 00 96 08</Write>
+ </Entry>
+ <Entry>
+  <Title>Rink Runner</Title>
+  <Detail>If using collision code, use this too (bugfix)</Detail>
+  <Scan>07 1E 00 00 00 49 4C</Scan>
+  <Write>07 1D 00 00 00 67 4C</Write>
+ </Entry>
+ <Entry>
+  <Title>Rink Runner</Title>
+  <Detail>Accidentals act as normal notes Pt 2</Detail>
+  <Scan>07 1E 00 00 00 49 4C</Scan>
+  <Write>07 1D 00 00 00 67 4C</Write>
+ </Entry>
+ <Entry>
+  <Title>Roodoku</Title>
+  <Detail>Instant Clear When All Blocks Filled</Detail>
+  <Scan>96 02 00 05 01 87 01 00 04 17 96 09 00 06</Scan>
+  <Write>96 02 00 05 01 3E 01 00 04 17 96 09 00 06</Write>
+ </Entry>
+ <Entry>
+  <Title>Ruins Rampage</Title>
+  <Detail>Dont fall in traps</Detail>
+  <Scan>9D 02 00 12 00 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 95 52 17</Scan>
+  <Write>9D 02 00 12 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 52 17</Write>
+ </Entry>
+ <Entry>
+  <Title>Shenkuu Tangram</Title>
+  <Detail>Place Pieces Anywhere (Play in normal mode for max score)</Detail>
+  <Scan>12 5C 00 00 65 01 5D F4 04</Scan>
+  <Write>10 1C 00 00 65 01 5D F4 04</Write>
+ </Entry>
+ <Entry>
+  <Title>Slorgs in Space</Title>
+  <Detail>Rainbow Ball​</Detail>
+  <Scan>60 BD 06 0D 07 00 00 24 00 75</Scan>
+  <Write>60 BD 06 0F 07 00 00 24 00 75</Write>
+ </Entry>
+ <Entry>
+  <Title>Smug Bug Smite</Title>
+  <Detail>More Time bonus (Slightly)</Detail>
+  <Scan>96 09 00 04 04 04 02 07 E8 03 00 00</Scan>
+  <Write>96 09 00 04 04 04 02 07 F4 01 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Smug Bug Smite</Title>
+  <Detail>More Time bonus (Moderately)</Detail>
+  <Scan>96 09 00 04 04 04 02 07 E8 03 00 00</Scan>
+  <Write>96 09 00 04 04 04 02 07 FA 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Smug Bug Smite</Title>
+  <Detail>More Time bonus (Ultimately) NOT RECOMMENDED</Detail>
+  <Scan>96 09 00 04 04 04 02 07 E8 03 00 00</Scan>
+  <Write>96 09 00 04 04 04 02 07 7D 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Snow Wars II</Title>
+  <Detail>Enemies don't shoot</Detail>
+  <Scan>96 09 00 07 58 15 01 00 04 01 08 12 4E 47 96 06 00 08 1A 04 01 08 13 4E 47 96 0B 00 08 1D 07 03 00 00 00 04 02 08 1E 52 17</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Snow Wars II</Title>
+  <Detail>Lupes Stay Still </Detail>
+  <Scan>96 09 00 07 02 00 00 00 04 02 08 25</Scan>
+  <Write>47 09 00 07 02 00 00 00 04 02 08 25</Write>
+ </Entry>
+ <Entry>
+  <Title>Snow Wars II</Title>
+  <Detail>Unlimited Timers (Will continue below zero)</Detail>
+  <Scan>9D 02 00 38 00 96 04</Scan>
+  <Write>9D 02 00 00 00 96 04</Write>
+ </Entry>
+ <Entry>
+  <Title>Snow Wars II</Title>
+  <Detail>Place Blocks Anywhere</Detail>
+  <Scan>12 9D 02 00 9F 02</Scan>
+  <Write>12 99 02 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Spinacles</Title>
+  <Detail>Click to Score</Detail>
+  <Scan>46 A7 07 01</Scan>
+  <Write>02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Spinacles</Title>
+  <Detail>Infinite Lives (miss as much as you want)</Detail>
+  <Scan>5D 85 06 4F 85 06 00</Scan>
+  <Write>02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Splat-A-Sloth</Title>
+  <Detail>500 Points When Spacebar is Pressed</Detail>
+  <Scan>96 04 00 04 01 08 08 4E 12 9D 02 00 05 00 96 01 00 03 3E 96 04 00 04 01 08 04 34 4F 96 04 00 04 01 08 07 4E 12 12 9D 02 00 34 00 96 05 00 07 C8 00 00 00 30 96 05 00 07 01 00 00 00 49 12 9D 02 00 17 00 96 06 00 04 01 08 07 05 01 4F 96 08 00 04 01 08 05 04 01 08 04 4E 4F 99 02 00 26 00 96 08 00 04 01 08</Scan>
+  <Write>96 0C 00 07 20 00 00 00 07 01 00 00 00 08 0C 1C 96 02 00 08 0D 52 12 9D 02 00 48 00 96 0B 00 06 00 00 00 00 00 00 00 00 08 0E 1C 96 02 00 08 0F 52 17 96 04 00 04 01 08 04 4E 96 09 00 07 01 00 00 00 04 01 08 10 52 17 96 06 00 04 01 08 08 05 01 4F 96 0D 00 06 00 00 00 00 00 00 00 00 04 02 08 0F 52 17 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>Stowaway Sting</Title>
+  <Detail>Timer Never Runs out</Detail>
+  <Scan>96 02 00 08 16 4E 0B</Scan>
+  <Write>96 02 00 08 16 4E 0D</Write>
+ </Entry>
+ <Entry>
+  <Title>Stowaway Sting</Title>
+  <Detail>Dangers/Monsters don't do damage</Detail>
+  <Scan>96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 D4</Scan>
+  <Write>02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Sutek's Tomb</Title>
+  <Detail>Wild-Card ratio very high! Pt 1</Detail>
+  <Scan>96 05 00 07 0F 00 00 00 49 4C</Scan>
+  <Write>96 05 00 07 19 00 00 00 49 4C</Write>
+ </Entry>
+ <Entry>
+  <Title>Sutek's Tomb</Title>
+  <Detail>Wild-Card ratio very high! Pt 2</Detail>
+  <Scan>96 07 00 08 96 07 19 00 00 00 30</Scan>
+  <Write>96 07 00 08 96 07 19 00 00 00 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Techo Says</Title>
+  <Detail>Always Correct</Detail>
+  <Scan>9D 02 00 EC 00 96 04 00 08 04 08 00</Scan>
+  <Write>99 02 00 00 00 96 04 00 08 04 08 00</Write>
+ </Entry>
+ <Entry>
+  <Title>The Castle of Eliv Thade</Title>
+  <Detail>Anything is Correct</Detail>
+  <Scan>9D 02 00 1A 00 17 96 02 00 08 6F</Scan>
+  <Write>99 02 00 1A 00 17 96 02 00 08 6F</Write>
+ </Entry>
+ <Entry>
+  <Title>The Great Desert Race</Title>
+  <Detail>Always Tug O War</Detail>
+  <Scan>96 07 00 04 02 07 02 00 00 00 67 12 12 9D 02 00 23 00 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 04 4E 96 02 00 08 05 52 17 96 02 00 08 06 3E 99 02 00 97</Scan>
+  <Write>96 0B 00 08 1B 07 01 00 00 00 04 01 08 08 4E 96 02 00 08 09 52 17 96 0D 00 06 00 00 00 00 00 00 00 00 04 01 08 04 4E 96 02 00 08 0A 52 17 96 02 00 08 1C 3E</Write>
+ </Entry>
+ <Entry>
+  <Title>The Great Desert Race</Title>
+  <Detail>Always Win At Tug O War</Detail>
+  <Scan>9D 02 00 48 03</Scan>
+  <Write>9D 02 00 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>The Great Desert Race</Title>
+  <Detail>All Players Don't Move</Detail>
+  <Scan>9D 02 00 66 00 96 2A 00 05 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 04 01 08 10 4E 0B 96 09 00 07 05 00 00 00 04 01 08 99 52 17 96 09 00 04 01 08 07 07 13</Scan>
+  <Write>99 02 00 3D 00 96 2A 00 05 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00 04 01 08 10 4E 0B 96 09 00 07 05 00 00 00 04 01 08 99 52 17 96 09 00 04 01 08 07 07 14</Write>
+ </Entry>
+ <Entry>
+  <Title>TNT Staff Smasher</Title>
+  <Detail>Crosshair always on</Detail>
+  <Scan>96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 09 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E</Scan>
+  <Write>96 04 00 04 01 08 0A 4E 96 04 00 04 01 08 0A 4E 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>TNT Staff Smasher</Title>
+  <Detail>Onscreen duration doesn't decrease</Detail>
+  <Scan>96 09 00 07 98 08 00 00 04 01 08 18 4E 96 04 00 04 01 08 17 4E 96 09 00 06 00 00 00 00 00 00 00 00 4E</Scan>
+  <Write>96 05 00 07 98 08 00 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Top Chop</Title>
+  <Detail>Slider Always On Center</Detail>
+  <Scan>06 60 80 0C 60 C6</Scan>
+  <Write>06 61 F1 04 47 C6</Write>
+ </Entry>
+ <Entry>
+  <Title>Top Chop</Title>
+  <Detail>Safe Zone Always On Center</Detail>
+  <Scan>60 80 0C 60 AA 06 46 A6 0D 01 60</Scan>
+  <Write>60 A1 01 66 EB 09 A1 61 F1 04 47</Write>
+ </Entry>
+ <Entry>
+  <Title>Trouble at the National Neopian</Title>
+  <Detail>Infinite Lives (You can use Q to quit)</Detail>
+  <Scan>96 04 00 04 01 08 0C 4E 0D 0B</Scan>
+  <Write>96 04 00 04 01 08 0C 4E 0D 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Trouble at the National Neopian</Title>
+  <Detail>Doesn't Minus points when hitting the wrong key</Detail>
+  <Scan>96 0D 00 04 01 08 18 07 F6 FF FF FF 04 01 08 0C</Scan>
+  <Write>96 0D 00 04 01 08 18 07 00 00 00 00 04 01 08 0C</Write>
+ </Entry>
+ <Entry>
+  <Title>Trouble at the National Neopian</Title>
+  <Detail>Enemies don't Take Gold</Detail>
+  <Scan>96 05 00 07 02 00 00 00 0D 18</Scan>
+  <Write>96 05 00 07 02 00 00 00 02 18</Write>
+ </Entry>
+ <Entry>
+  <Title>Typing Terror</Title>
+  <Detail>Life never decreases</Detail>
+  <Scan>96 08 00 04 01 08 52 04 01 08 52 4E 51</Scan>
+  <Write>96 08 00 04 01 08 52 04 01 08 52 4E 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Typing Terror</Title>
+  <Detail>Accuracy 100%</Detail>
+  <Scan>96 08 00 04 01 08 56 04 01 08 56 4E 50</Scan>
+  <Write>96 08 00 04 01 08 56 04 01 08 56 4E 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Tyrannian Mini Golf</Title>
+  <Detail>Obstacles Do Nothing</Detail>
+  <Scan>4F 96 04 00 04 06 08 30</Scan>
+  <Write>4F 99 02 00 A0 0A 08 30</Write>
+ </Entry>
+ <Entry>
+  <Title>Tyrannian Mini Golf</Title>
+  <Detail>Strokes Always 1</Detail>
+  <Scan>4E 96 02 00 08 DC 52 17 96 11 00 04 02</Scan>
+  <Write>4E 96 02 00 08 B5 52 17 96 11 00 04 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Tyrannian Mini Golf</Title>
+  <Detail>Always Hole In One</Detail>
+  <Scan>52 12 12 9D 02 00 2F</Scan>
+  <Write>52 12 12 99 02 00 2F</Write>
+ </Entry>
+ <Entry>
+  <Title>Usuki Frenzy</Title>
+  <Detail>Any set counts as correct</Detail>
+  <Scan>9D 02 00 76 01</Scan>
+  <Write>02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Volcano Run II</Title>
+  <Detail>Never Die</Detail>
+  <Scan>96 06 00 04 01 08 0D 05 01</Scan>
+  <Write>96 06 00 04 01 08 0D 05 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Web of Vernax</Title>
+  <Detail>Vernax doesn't  move Pt 1</Detail>
+  <Scan>96 02 00 08 2B 1C 96 04 00 08 12 08 36 1C 4F 96 02 00 08 2B 1C 96 04 00 08 13 08 37 1C 4F</Scan>
+  <Write>96 02 00 08 2B 1C 96 04 00 08 0E 08 2B 1C 96 02 00 08 0E 4E 4F 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Web of Vernax</Title>
+  <Detail>Vernax doesn't move Pt 2</Detail>
+  <Scan>96 02 00 08 2B 1C 96 04 00 08 0E 08 31 1C 4F 96 02 00 08 2B 1C 96 04 00 08 10 08 32 1C 4F</Scan>
+  <Write>96 02 00 08 2B 1C 96 04 00 08 10 08 2B 1C 96 02 00 08 10 4E 4F 02 02 02 02 02 02 02 02 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Web of Vernax</Title>
+  <Detail>Touching other bugs wont kill you</Detail>
+  <Scan>96 02 00 08 38 1C 96 02 00 08 3A 4E 96 02 00 08 3B 1C 96 02 00 08 41 4E 48 12</Scan>
+  <Write>96 02 00 08 38 1C 96 02 00 08 3A 4E 96 02 00 08 38 1C 96 02 00 08 3A 4E 48 02</Write>
+ </Entry>
+ <Entry>
+  <Title>Web of Vernax</Title>
+  <Detail>Remove Munchies</Detail>
+  <Scan>9D 02 00 96 00</Scan>
+  <Write>99 02 00 96 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Word Poker</Title>
+  <Detail>Accept Any Words</Detail>
+  <Scan>49 4C 12 9D 02 00 10</Scan>
+  <Write>49 4C 12 99 02 00 00</Write>
+ </Entry>
+ <Entry>
+  <Title>Word Poker</Title>
+  <Detail>Repeat Same Words</Detail>
+  <Scan>12 9D 02 00 1B 16</Scan>
+  <Write>12 99 02 00 00 00</Write>
+ </Entry>
+</List>
