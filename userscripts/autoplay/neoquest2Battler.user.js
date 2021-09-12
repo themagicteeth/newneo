@@ -33,7 +33,18 @@ else {
     let nxactor = 1; // who fightsS??' default =1: rohane
     let fact = 3; // default is attack , will override for low health
     let hitTarget = GM_getValue("hitTarget", 5); //hittargets 1-4 are reserved for allies
+
+    /**
+     * For now you need to enter the healing item you would like to use.
+     * 
+     * 30011 - Healing Vial (15)
+     * 30012 - Healing Flask (25)
+     * 30013 - Healing Potion (35)
+     * 30014 - Healing Bottle (50)
+     * 30021 - Potion of Regeneration (60)
+     */
     const healingItem = GM_getValue("healingItem", 30011); // get the healing item in case HP turns red or yellow
+
     let isHasted = GM_getValue("isHasted", false); 
     const elements = document.getElementsByTagName('img');
 
