@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           NeoQuest II Trainer
+// @name           NeoQuest II Battler
 // @namespace      Neoscripts
 // @description    Automatically battles for you.
 // @grant          GM_log
