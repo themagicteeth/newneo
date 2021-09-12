@@ -6,7 +6,7 @@
 // @match       *://www.neopets.com/haggle.phtml
 // @match       *://www.neopets.com/haggle.phtml*
 // @grant       none
-// @version     1.0
+// @version     1.0.1
 // @author      -
 // @require     https://raw.githubusercontent.com/themagicteeth/newneo/main/userscripts/autobuy/autoBuy.js
 // @description Auto buy for Kaylas
