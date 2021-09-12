@@ -9,11 +9,11 @@
 // ==/UserScript==
 
 
-if(GM_getValue("goLeft")) {
-  document.location.href="javascript:dosub(3)";
-  GM_setValue("goLeft",false);
+if (GM_getValue("goLeft")) {
+  document.location.href = "javascript:dosub(3)";
+  GM_setValue("goLeft", false);
 }
 else {
-  document.location.href="javascript:dosub(4)";
-  GM_setValue("goLeft",true);
+  document.location.href = "javascript:dosub(4)";
+  GM_setValue("goLeft", true);
 }

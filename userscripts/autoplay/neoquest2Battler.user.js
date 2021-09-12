@@ -29,13 +29,13 @@ if (hiccup) {
 }
 else {
     //begin real battling!!
-    var useid = -1; // use special item??
-    var nxactor = 1; // who fightsS??' default =1: rohane
-    var fact = 3; // default is attack , will override for low health
-    var hitTarget = GM_getValue("hitTarget", 5); //hittargets 1-4 are reserved for allies
-    var healingItem = GM_getValue("healingItem", 30011); // get the healing item in case HP turns red or yellow
-    var isHasted = GM_getValue("isHasted", false);
-    const elements = document.getElementsByTagName('img'); 
+    let useid = -1; // use special item??
+    let nxactor = 1; // who fightsS??' default =1: rohane
+    let fact = 3; // default is attack , will override for low health
+    let hitTarget = GM_getValue("hitTarget", 5); //hittargets 1-4 are reserved for allies
+    const healingItem = GM_getValue("healingItem", 30011); // get the healing item in case HP turns red or yellow
+    let isHasted = GM_getValue("isHasted", false); 
+    const elements = document.getElementsByTagName('img');
 
     for (let i = 0; i < elements.length; i++) {
         switch (elements[i].src) {
@@ -43,10 +43,10 @@ else {
                 GM_setValue("hitTarget", 5);
                 GM_setValue("isHasted", false);
                 document.location.href = "http://www.neopets.com/games/nq2/nq2.phtml?start=1";
-            break;
+                break;
 
             case "http://images.neopets.com/nq2/x/com_atk.gif":
-                var texts = document.getElementsByTagName("font");
+                const texts = document.getElementsByTagName("font"); 
 
                 for (let j = 0; j < texts.length; j++) {
                     //check to increment target
@@ -66,7 +66,7 @@ else {
                                 fact = 5;
                                 useid = healingItem;
                             }
-                        break;
+                            break;
 
                         case "<b>Mipsy</b>":
                             nxactor = 2;
@@ -79,7 +79,7 @@ else {
                                 fact = 5;
                                 useid = healingItem;
                             }
-                        break;
+                            break;
 
                         case "<b>Talinia</b>":
                             const multipleTargets = /Multiple Targets/;
@@ -94,7 +94,7 @@ else {
                                 fact = 5;
                                 useid = healingItem;
                             }
-                        break;
+                            break;
 
                         case "<b>Velm</b>":
                             var fullhp = 0; //if its 4 then all 4 people are fully healed

@@ -18,23 +18,6 @@ $("select[name='pet_name']").find("option").each((index, element) => {
     }
 });
 
-/***********************************************************************************/
-// This part can be deleted :)
-let imgs = "";
-let imgTitle = [
-    "Time to find a new owner!",
-    `Fuck you, ${username}!`,
-    "I have a huge phobia of cockroaches!",
-    "Is it too late to uncreate myself?",
-    "I thought you loved me </3",
-    `Am I really just worth 140NP to you, ${username}?`
-];
-for (let i = 0; i < pets.length; i++) {
-    imgs += `<img style="width: 100px; height: 100px;" src="http://pets.neopets.com/cpn/${pets[i]}/2/2.png" alt="" title="${imgTitle[Math.floor(Math.random() * imgTitle.length)]}">`;
-}
-$("#sad-pets").html(imgs);
-/***********************************************************************************/
-
 $("#book-all").on("click", function () {
     return new Promise(resolve => {
         $(this).prop("disabled", true);

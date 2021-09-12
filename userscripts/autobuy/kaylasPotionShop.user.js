@@ -12,7 +12,6 @@
 // @description Auto buy for Kaylas
 // ==/UserScript==
 
-
 // Modify this list for your desired items
 // Items in list from https://neopets-cheats.com/neopets-restocking-guide/
 const itemsToBuy = [

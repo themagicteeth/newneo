@@ -12,35 +12,35 @@ document.onkeydown = (e) => {
     switch (e.which) {
         case 50: // left,2
             dosub(3);
-        break;
+            break;
 
         case 54: // up, 6
             dosub(1);
-        break;
+            break;
 
         case 56: // right,8
             dosub(4);
-        break;
+            break;
 
         case 52: // down, 4
             dosub(2);
-        break;
+            break;
 
         case 51: //northwest, 3
             dosub(5);
-        break;
+            break;
 
         case 57: //northeast, 9
             dosub(7);
-        break;
+            break;
 
         case 49: //southwest, 1
             dosub(6);
-        break;
+            break;
 
         case 55: //southeast, 7
             dosub(8);
-        break;
+            break;
 
         default: return; // exit this handler for other keys
     }
