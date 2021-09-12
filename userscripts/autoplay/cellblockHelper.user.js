@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Cellblock Helper
-// @namespace    http://tampermonkey.net/
+// @namespace    Neoscripts
 // @version      0.2
-// @description  This tool is designed to help you NOT make the BAD moves and DO make the GOOD moves! by ko_neo
-// @author       You
-// @match        http://www.neopets.com/games/cellblock/cellblock_main.phtml
+// @description  This tool is designed to help you NOT make the BAD moves and DO make the GOOD moves!
+// @author       -
+// @match        *://www.neopets.com/games/cellblock/cellblock_main.phtml
 // @grant        none
-// @require      http://code.jquery.com/jquery-3.4.1.min.js
 // ==/UserScript==
 
 const blockImg1 = 'http://images.neopets.com/games/cellblock/block1.gif';
@@ -34,7 +33,7 @@ let max = 1.5;
 let random = Math.random() * (+max - +min) + +min;
 
 function storeCoordinates(xVal, yVal, tag, array, origTag, iter) {
-    array.push({ x: xVal, y: yVal, tag: tag, orig: origTag, iter: iter });
+    array.push({ x: xVal, y: yVal, tag, orig: origTag, iter });
 }
 
 function getGridRef(x, y) {
@@ -75,16 +74,12 @@ setTimeout(() => {
             iter++;
             for (let d = 1; d < 5; d++) {
                 // Right
-                if (i + d > -1 && i + d < 100) {
-                    if (coords[i + d].y === coords[i].y) {
-                        storeCoordinates(coords[i + d].x, coords[i + d].y, coords[i + d].tag, right, coords[i].tag, iter);
-                    }
+                if (i + d > -1 && i + d < 100 && coords[i + d].y === coords[i].y) {
+                    storeCoordinates(coords[i + d].x, coords[i + d].y, coords[i + d].tag, right, coords[i].tag, iter);
                 }
                 // Left
-                if (i - d > -1 && i - d < 100) {
-                    if (coords[i - d].y === coords[i].y) {
-                        storeCoordinates(coords[i - d].x, coords[i - d].y, coords[i - d].tag, left, coords[i].tag, iter);
-                    }
+                if (i - d > -1 && i - d < 100 && coords[i - d].y === coords[i].y) {
+                    storeCoordinates(coords[i - d].x, coords[i - d].y, coords[i - d].tag, left, coords[i].tag, iter);
                 }
                 // Down
                 if (i + d * 10 > -1 && i + d * 10 < 100) {
@@ -95,28 +90,20 @@ setTimeout(() => {
                     storeCoordinates(coords[i - d * 10].x, coords[i - d * 10].y, coords[i - d * 10].tag, up, coords[i].tag, iter);
                 }
                 // Up-Right
-                if (i - d * 9 > -1 && i - d * 9 < 100) {
-                    if (coords[i].x < coords[i - d * 9].x) {
-                        storeCoordinates(coords[i - d * 9].x, coords[i - d * 9].y, coords[i - d * 9].tag, upRight, coords[i].tag, iter);
-                    }
+                if (i - d * 9 > -1 && i - d * 9 < 100 && coords[i].x < coords[i - d * 9].x) {
+                    storeCoordinates(coords[i - d * 9].x, coords[i - d * 9].y, coords[i - d * 9].tag, upRight, coords[i].tag, iter);
                 }
                 // Up-Left
-                if (i - d * 11 > -1 && i - d * 11 < 100) {
-                    if (coords[i].x > coords[i - d * 11].x) {
-                        storeCoordinates(coords[i - d * 11].x, coords[i - d * 11].y, coords[i - d * 11].tag, upLeft, coords[i].tag, iter);
-                    }
+                if (i - d * 11 > -1 && i - d * 11 < 100 && coords[i].x > coords[i - d * 11].x) {
+                    storeCoordinates(coords[i - d * 11].x, coords[i - d * 11].y, coords[i - d * 11].tag, upLeft, coords[i].tag, iter);
                 }
                 // Down-Right
-                if (i + d * 11 > -1 && i + d * 11 < 100) {
-                    if (coords[i].x < coords[i + d * 11].x) {
-                        storeCoordinates(coords[i + d * 11].x, coords[i + d * 11].y, coords[i + d * 11].tag, downRight, coords[i].tag, iter);
-                    }
+                if (i + d * 11 > -1 && i + d * 11 < 100 && coords[i].x < coords[i + d * 11].x) {
+                    storeCoordinates(coords[i + d * 11].x, coords[i + d * 11].y, coords[i + d * 11].tag, downRight, coords[i].tag, iter);
                 }
                 // Down-Left
-                if (i + d * 9 > -1 && i + d * 9 < 100) {
-                    if (coords[i].x > coords[i + d * 9].x) {
-                        storeCoordinates(coords[i + d * 9].x, coords[i + d * 9].y, coords[i + d * 9].tag, downLeft, coords[i].tag, iter);
-                    }
+                if (i + d * 9 > -1 && i + d * 9 < 100 && coords[i].x > coords[i + d * 9].x) {
+                    storeCoordinates(coords[i + d * 9].x, coords[i + d * 9].y, coords[i + d * 9].tag, downLeft, coords[i].tag, iter);
                 }
             }
         }
@@ -130,6 +117,7 @@ setTimeout(() => {
     checkCombo(downRight);
     checkCombo(downLeft);
 }, random * 100);
+
 function checkCombo(thisArray) {
     lock = false;
     lock2 = false;
@@ -159,48 +147,24 @@ function checkCombo(thisArray) {
         thisCombo.forEach(element => {
             console.log(element);
             // Set up for win
-            if (lock === false) {
-                if (meCount === 2 && openCount === 2) {
-                    if (element.tag !== 'me') {
-                        if (element.tag === 'open' && element.orig === 'me') {
-                            if (getGridRef(element.y, element.x)[0].style.backgroundColor !== 'darkgreen') {
-                                getGridRef(element.y, element.x)[0].style.backgroundColor = 'limegreen';
-                                lock = true;
-                            }
-                        }
-                    }
-                }
+            if (lock === false && (meCount === 2 && openCount === 2 && (element.tag !== 'me' && (element.tag === 'open' && element.orig === 'me' && getGridRef(element.y, element.x)[0].style.backgroundColor !== 'darkgreen')))) {
+                getGridRef(element.y, element.x)[0].style.backgroundColor = 'limegreen';
+                lock = true;
             }
             // Winning move
-            if (meCount === 3) {
-                if (element.tag !== 'me') {
-                    if (element.tag === 'open' && element.orig === 'me') {
-                        getGridRef(element.y, element.x)[0].style.backgroundColor = 'darkgreen';
-                        getGridRef(element.y, element.x)[0].style.border = '1px darkgreen solid';
-                    }
-                }
+            if (meCount === 3 && (element.tag !== 'me' && (element.tag === 'open' && element.orig === 'me'))) {
+                getGridRef(element.y, element.x)[0].style.backgroundColor = 'darkgreen';
+                getGridRef(element.y, element.x)[0].style.border = '1px darkgreen solid';
             }
             // Set up for loss
-            if (lock2 === false) {
-                if (enemyCount === 2 && openCount === 2) {
-                    if (element.tag !== 'enemy') {
-                        if (element.tag === 'open' && element.orig === 'enemy') {
-                            if (getGridRef(element.y, element.x)[0].style.backgroundColor !== 'darkred') {
-                                getGridRef(element.y, element.x)[0].style.backgroundColor = 'yellow';
-                                lock2 = true;
-                            }
-                        }
-                    }
-                }
+            if (lock2 === false && (enemyCount === 2 && openCount === 2 && (element.tag !== 'enemy' && (element.tag === 'open' && element.orig === 'enemy' && getGridRef(element.y, element.x)[0].style.backgroundColor !== 'darkred')))) {
+                getGridRef(element.y, element.x)[0].style.backgroundColor = 'yellow';
+                lock2 = true;
             }
             // Losing move
-            if (enemyCount === 3) {
-                if (element.tag !== 'enemy') {
-                    if (element.tag === 'open' && element.orig === 'enemy') {
-                        getGridRef(element.y, element.x)[0].style.backgroundColor = 'darkred';
-                        getGridRef(element.y, element.x)[0].style.border = '1px darkred solid';
-                    }
-                }
+            if (enemyCount === 3 && (element.tag !== 'enemy' && (element.tag === 'open' && element.orig === 'enemy'))) {
+                getGridRef(element.y, element.x)[0].style.backgroundColor = 'darkred';
+                getGridRef(element.y, element.x)[0].style.border = '1px darkred solid';
             }
         });
     }
