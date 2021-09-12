@@ -1,19 +1,18 @@
 // ==UserScript==
-// @name         Neolodge - send all pets
-// @namespace    np
+// @name         Send All Pets
+// @namespace    Neoscripts
 // @version      2021.03.25
 // @description  Because you can never be too lazy. Sends all your neopets to the lodge with just one click!
-// @author       wtmeow
+// @author       -
 // @match        *://www.neopets.com/neolodge.phtml
 // @grant        none
-// @require      https://code.jquery.com/jquery-3.5.1.min.js
 // ==/UserScript==
 
 $("form[action='book_neolodge.phtml']").after(`<br><p><b>Step 5.</b> Or alternatively, fuck all of the above and just click on this button instead.</p><br><div style="text-align: center"><button id="book-all" type="button" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; padding: 10px;">I'm a fucking terrible owner.<br> Please send all my slaves to die in<br>Cockroach Towers for 28 nights.</div><br><br><div id="sad-pets" style="text-align: center;"></div><br><div style="text-align:center;"><i>Don't do this to us!</i></div>`);
 
 const username = appInsightsUserName || $(".user a[href*='/userlookup']").text();
 let pets = [];
-$("select[name='pet_name']").find("option").each(function (index, element) {
+$("select[name='pet_name']").find("option").each((index, element) => {
     if (index !== 0) {
         pets.push($(element).text().trim());
     }
@@ -40,7 +39,7 @@ $("#book-all").on("click", function () {
     return new Promise(resolve => {
         $(this).prop("disabled", true);
         for (let i = 0; i < pets.length; i++) {
-            setTimeout(function () {
+            setTimeout(() => {
                 $.ajax({
                     type: "POST",
                     url: "/book_neolodge.phtml",
@@ -50,7 +49,7 @@ $("#book-all").on("click", function () {
                         "hotel_rate": "5",
                         "nights": "28"
                     },
-                    success: function (data, status, xhr) {
+                    success: (data, status, xhr) => {
                         console.log({
                             "pet": pets[i],
                             "status": status

@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         Neopets old shop toolbar
-// @namespace    http://tampermonkey.net/
+// @name         Old Shop Toolbar
+// @namespace    Neoscripts
 // @version      0.2
 // @description  Changes shops links to old shop toolbar
 // @author       juvian123
