@@ -15,7 +15,7 @@
 //Wise King and Symol Hole
 const $form = $("form");
 
-$form.find("select").each(function (index, element) {
+$form.find("select").each((index, element) => {
     const numOptions = $(element).find("option").length;
     const random = Math.floor(Math.random() * (numOptions - 1)) + 1;
     $(element).find("option").eq(random).prop("selected", true);
@@ -34,7 +34,7 @@ if (document.URL.includes("grumpyking")) {
 if (document.URL.includes("turmaculus")){
     const $select = $("select[name='wakeup']");
 
-    $select.each(function (index, element) {
+    $select.each((index, element) => {
         const numOptions = $(element).find("option").length;
         const random = Math.floor(Math.random() * (numOptions - 1)) + 1;
         $(element).find("option").eq(random).prop("selected", true);
@@ -45,8 +45,7 @@ if (document.URL.includes("turmaculus")){
 if(document.URL.includes("meteor")){
     const $form = $("form");
 
-    $form.find("select").each(function (index, element) {
-        const numOptions = $(element).find("option").length;
+    $form.find("select").each((index, element) => {
         $(element).find("option").eq(1).prop("selected", true);
     });
 }

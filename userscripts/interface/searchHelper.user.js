@@ -109,17 +109,17 @@ function inURL(substr) {
 
 function cleanItem(item) {
     return item.replaceAll("!", "%21")
-               .replaceAll("#", "%23")
-               .replaceAll("&", "%26")
-               .replaceAll("(", "%28")
-               .replaceAll(")", "%29")
-               .replaceAll("*", "%2A")
-               .replaceAll("+", "%2B")
-               .replaceAll(",", "%2C")
-               .replaceAll("/", "%2F")
-               .replaceAll(":", "%3A")
-               .replaceAll("?", "%3F")
-               .replaceAll(" ", "+");
+        .replaceAll("#", "%23")
+        .replaceAll("&", "%26")
+        .replaceAll("(", "%28")
+        .replaceAll(")", "%29")
+        .replaceAll("*", "%2A")
+        .replaceAll("+", "%2B")
+        .replaceAll(",", "%2C")
+        .replaceAll("/", "%2F")
+        .replaceAll(":", "%3A")
+        .replaceAll("?", "%3F")
+        .replaceAll(" ", "+");
 }
 
 // overall linker thing
@@ -129,7 +129,7 @@ function makelinks(item, extras) {
 
     item = $.trim(item);
     if (typeof extras === "undefined") {
-        extras = {cash: false, wearable: false, tradeable: true};
+        extras = { cash: false, wearable: false, tradeable: true };
     }
 
     if (typeof extras.tradeable === "undefined") {
@@ -236,13 +236,13 @@ if (isBeta) {
         // Snow Faerie Quests
 
         // due to inconsistencies in the ajax requests, we will attempt to do two different kinds of search helper adds
-        $(".item-img + .item-name").find("b").each(function (index, element) {
+        $(".item-img + .item-name").find("b").each((index, element) => {
             if (!hasSearchHelper(element)) {
                 $(element).after(makelinks($(element).text()));
             }
         });
 
-        $("img[src*='/items/'] + br + p > b").each(function (index, element) {
+        $("img[src*='/items/'] + br + p > b").each((index, element) => {
             if (!hasSearchHelper(element)) {
                 $(element).after(makelinks($(element).text()));
             }
@@ -251,7 +251,7 @@ if (isBeta) {
 
     // Main Shops
     if (inURL("objects.phtml") || inURL("type=shop")) {
-        $(".item-img + .item-name").each(function (index, element) {
+        $(".item-img + .item-name").each((index, element) => {
             $(element).after(makelinks($(element).text()));
         });
     }
@@ -260,8 +260,8 @@ if (isBeta) {
     if (inURL("inventory")) {
         // the inventory system is more flexible than it used to be, so we have to do this a little differently
         $(document).ajaxSuccess(
-            function () {
-                $(".item-img + .item-name").each(function (index, element) {
+            () => {
+                $(".item-img + .item-name").each((index, element) => {
                     // this will add more and more if you do things like SSW searching, so check first
                     if (!hasSearchHelper(element)) {
                         let extras = {
@@ -346,14 +346,14 @@ if (isBeta) {
 
     // Main Shops
     if (document.URL.includes("objects.phtml?") && document.URL.includes("type=shop")) {
-        $("img[src*='/items/']").parent().parent().find("b").each(function (k, v) {
+        $("img[src*='/items/']").parent().parent().find("b").each((k, v) => {
             $(v).after(makelinks($(v).text()));
         });
     }
 
     // Igloo Garage
     if (document.URL.includes("/winter/igloo2.phtml")) {
-        $("img[src*='/items/']").parent().parent().find("b").each(function (k, v) {
+        $("img[src*='/items/']").parent().parent().find("b").each((k, v) => {
             $(v).after(makelinks($(v).text()));
         });
     }
@@ -367,7 +367,7 @@ if (isBeta) {
 
     // Hospital
     if (document.URL.includes("/hospital.phtml")) {
-        $("img[src*='/items/']").parent().prev().find("b").each(function (k, v) {
+        $("img[src*='/items/']").parent().prev().find("b").each((k, v) => {
             $(v).after(makelinks($(v).text())).before("<br>");
             $(v).parent().width(150);
         });
@@ -375,8 +375,8 @@ if (isBeta) {
 
     // Redeeming Cash
     if (document.URL.includes("process_cash_object")) {
-        extras = {cash: true, wearable: true};
-        $("img[src*='/items/']").parent().find("b").each(function (k, v) {
+        extras = { cash: true, wearable: true };
+        $("img[src*='/items/']").parent().find("b").each((k, v) => {
             $(v).before("<br>").after(makelinks($(v).text(), extras));
         });
     }
@@ -389,7 +389,7 @@ if (isBeta) {
         nameb.parent().find("img").after(makelinks(fixname));
     }
     if (document.URL.includes("auctions.phtml") || document.URL.includes("genie.phtml")) {
-        $("a[href*='?type=bids&auction_id=']:not(:has('img'))").each(function (index, element) {
+        $("a[href*='?type=bids&auction_id=']:not(:has('img'))").each((index, element) => {
             const itemname = $(element).text();
             $(element).after(makelinks(itemname));
         })
@@ -397,10 +397,10 @@ if (isBeta) {
 
     // Inventory
     if (document.URL.includes("inventory")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let $nametd = $(v).parent().parent();
 
-            let extras = {cash: $(v).hasClass("otherItem"), wearable: $nametd.hasClass("wearable"), itemid: -1};
+            let extras = { cash: $(v).hasClass("otherItem"), wearable: $nametd.hasClass("wearable"), itemid: -1 };
 
             if ($nametd.find("hr").exists()) {
                 extras.tradeable = !$nametd.find("span:contains('(no trade)')").exists();
@@ -414,7 +414,7 @@ if (isBeta) {
     // SDB & Closet
     // only downside is not knowing if something is NC if it's in the closet. Oh well, no way to know.
     if (document.URL.includes("safetydeposit") || document.URL.includes("closet")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let itemInput = $(v).parent().parent().find("td").eq(5).find("input");
             let id = itemInput.attr("data-item_id") || itemInput.attr("name").match(/\d+/g)[0];
 
@@ -423,7 +423,7 @@ if (isBeta) {
                 iswearable = true;
             }
             let category = $(v).parent().parent().find("td").eq(3);
-            let extras = {cash: (category.text().trim() === "Neocash"), wearable: iswearable, itemid: id};
+            let extras = { cash: (category.text().trim() === "Neocash"), wearable: iswearable, itemid: id };
             let nametd = $(v).parent().parent().find("td").eq(1);
             nametd.find("b").eq(0).after(makelinks(nametd.find("b").eq(0).justtext(), extras));
         });
@@ -431,7 +431,7 @@ if (isBeta) {
 
     // Your Shop
     if (document.URL.includes("type=your") || document.URL.includes("market_your") || $("[name=subbynext]").length === 2) { // because pressing the Previous/Next 30 is a POST and has nothing of value in the URL
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let nametd = $(v).parent().parent().find("td").eq(0);
             let itemname = nametd.text();
             itemname = itemname.replace(nametd.find(".medText").text(), "");
@@ -442,7 +442,7 @@ if (isBeta) {
 
     // Coincidence
     if (document.URL.includes("space/coincidence")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             nametd = $(v).parent();
             nametd.find("b").eq(0).after(makelinks(nametd.justtext()));
         });
@@ -450,21 +450,21 @@ if (isBeta) {
 
     // MI Training
     if (document.URL.includes("/island/training.phtml?type=status")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             $(v).after(makelinks($(v).prev().text()));
         });
     }
 
     // Secret Training
     if (document.URL.includes("/island/fight_training.phtml?type=status")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             $(v).after(makelinks($(v).prev().text()));
         });
     }
 
     // KI Training
     if (document.URL.includes("/pirates/academy.phtml?type=status")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let nametd = $(v).parent();
             let itemname = nametd.parent().find("td > b").eq(0).text();
             nametd.parent().find("td > b").eq(0).after(makelinks(itemname));
@@ -475,14 +475,14 @@ if (isBeta) {
     // essentially same as kitchen. woo, lazy!
     if (document.URL.includes("winter/snowfaerie")) {
         addhr = (document.URL.includes("snowfaerie2") === false);
-        $("img[src*='/items/']").parent().find("b").each(function (k, v) {
+        $("img[src*='/items/']").parent().find("b").each((k, v) => {
             $(v).after(makelinks($(v).text()));
         });
     }
 
     // Esophagor
     if (document.URL.includes("halloween/esophagor")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let itemname = $(v).parent().find("b");
             itemname.after(makelinks(itemname.text()));
         });
@@ -490,7 +490,7 @@ if (isBeta) {
 
     // Edna
     if (document.URL.includes("halloween/witchtower")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let itemname = $(v).parent().find("b");
             itemname.after(makelinks(itemname.text()));
         });
@@ -498,7 +498,7 @@ if (isBeta) {
 
     // Kitchen
     if (document.URL.includes("island/kitchen")) {
-        $("img[src*='/items/']").parent().find("b").each(function (k, v) {
+        $("img[src*='/items/']").parent().find("b").each((k, v) => {
             $(v).after(makelinks($(v).text()));
         });
     }
@@ -512,7 +512,7 @@ if (isBeta) {
     // employment agency
     if (document.URL.includes("employment")) {
         if (document.URL.includes("type=jobs")) {
-            $("b:contains('Find')").each(function (k, v) {
+            $("b:contains('Find')").each((k, v) => {
                 let itemname = $(v).parent().clone().find("b").remove().end().html().split("<br>")[0];
                 $($(v)[0].nextSibling).after(makelinks(itemname));
             });
@@ -524,7 +524,7 @@ if (isBeta) {
 
     // Faerie Quests
     if (document.URL.includes("quests.phtml")) {
-        $("img[src*='/items/']").each(function (k, v) {
+        $("img[src*='/items/']").each((k, v) => {
             let itemname = $(v).parent().find("b");
             itemname.after(makelinks(itemname.text()));
         });
@@ -532,7 +532,7 @@ if (isBeta) {
 
     // Kadoatery
     if (document.URL.includes("games/kadoatery")) {
-        $("td:contains('You should give it'):not(:contains('Thanks,'))").each(function (k, v) {
+        $("td:contains('You should give it'):not(:contains('Thanks,'))").each((k, v) => {
             let itemname = $(v).find("strong").last();
             itemname.after(makelinks(itemname.text()));
         });
@@ -540,21 +540,21 @@ if (isBeta) {
 
     // General Store
     if (document.URL.includes("generalstore.phtml")) {
-        $("td:contains('Cost'):not(:has('td'))").find("strong").each(function (index, element) {
+        $("td:contains('Cost'):not(:has('td'))").find("strong").each((index, element) => {
             $(element).after(makelinks($(element).text()));
         });
     }
 
     // Hidden Tower
     if (document.URL.includes("hiddentower938.phtml")) {
-        $(".content table").find("b:not([style*='red;'])").each(function (index, element) {
+        $(".content table").find("b:not([style*='red;'])").each((index, element) => {
             $(element).after(makelinks($(element).text()));
         });
     }
 
     // Your Shop's Sales History
     if (document.URL.includes("market.phtml?type=sales")) {
-        $('[value="Clear Sales History"]').parent().parent().parent().parent().find('tr').each(function (index, element) {
+        $('[value="Clear Sales History"]').parent().parent().parent().parent().find('tr').each((index, element) => {
             // make sure it's not the header or footer of this table
             let cell = $(element).find("td").eq(1);
             if (cell.attr('bgcolor') === "#ffffcc") {
@@ -565,13 +565,13 @@ if (isBeta) {
 
     // Battledome
     if (document.URL.includes("/dome/neopets")) {
-        $(".equipFrame").each(function (index, element) {
+        $(".equipFrame").each((index, element) => {
             const itemname = $(element).text().trim();
             if (itemname) { // ignore if empty slot
                 $(makelinks(itemname)).appendTo($(element));
             }
         });
-        $(".equipTable").css({"overflow-y": "scroll"});
+        $(".equipTable").css({ "overflow-y": "scroll" });
     }
 
     function sswopen(item) {

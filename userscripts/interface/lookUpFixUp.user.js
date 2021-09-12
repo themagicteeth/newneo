@@ -33,7 +33,7 @@ if (trophyDiv && !trophyDiv.textContent.match('Trophies: None')) {
 
             for (let m = 0; m < thisTable.getElementsByTagName('img').length; m++) {
                 thisImg = thisTable.getElementsByTagName('img')[m].src;
-                
+
                 if (thisImg.match('_1.gif')) { acount++ }
                 if (thisImg.match('_2.gif')) { bcount++ }
                 if (thisImg.match('_3.gif')) { ccount++ }
@@ -48,8 +48,8 @@ if (trophyDiv && !trophyDiv.textContent.match('Trophies: None')) {
             countDiv.setAttribute('style', '');
 
             if (dcount == 0) { d = new Array('3', '', '', ''); }
-            else { d = new Array('4', ' tsright', '<td class="tsf tstop" style="background-color: #FFFFFF; font-weight: bold; color: #1E90FF;" align="center" width="25%"> Runner-up </td>', '<td class="tsf" style="background-color: #EFEFEF; color: #000000;" align="center">' + dcount + '</td>'); }
-            
+            else { d = new Array('4', ' tsright', '<td class="tsf tstop" style="background-color: #FFFFFF; font-weight: bold; color: #1E90FF;" align="center" width="25%"> Runner-up </td>', `<td class="tsf" style="background-color: #EFEFEF; color: #000000;" align="center">${dcount}</td>`); }
+
             countDiv.innerHTML = `<table class="tsf tstop tsleft tsright" border="0" cellpadding="2" cellspacing="0"><tbody><tr><td class="tsf" style="background-color: #FFE573; font-weight: bold; color: #000000;" colspan="${d[0]}" align="center">Trophy Stats</td></tr><tr><td class="tsf tstop tsright" style="background-color: #FFFFFF; font-weight: bold; color: #FFD700;" align="center" width="25%"> Gold </td><td class="tsf tstop tsright" style="background-color: #FFFFFF; font-weight: bold; color: #A9A9A9;" align="center" width="25%"> Silver </td><td class="tsf tstop${d[1]}" style="background-color: #FFFFFF; font-weight: bold; color: #A0522D;"  align="center" width="25%"> Bronze </td>${d[2]}</tr><tr><td class="tsf tsright" style="background-color: #EFEFEF; color: #000000;" align="center">${acount}</td><td class="tsf tsright" style="background-color: #EFEFEF; color: #000000;" align="center">${bcount}</td><td class="tsf${d[1]}" style="background-color: #EFEFEF; color: #000000;" align="center">${ccount}</td>${d[3]}</tr><tr><td class="tsf tstop tsbottom" style="background-color: #FFE573; font-weight: bold; color: #000000;" colspan="${d[0]}" align="center">Total: ${tcount}</td></tr></tbody></table><br>`;
             thisTable.parentNode.insertBefore(countDiv, thisTable);
             countDiv.addEventListener('dblclick', function () { this.setAttribute('style', 'display: none;'); }, false);

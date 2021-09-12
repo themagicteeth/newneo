@@ -10,17 +10,17 @@
 
 const $form = $("form[action='/water/fishing.phtml']");
 
-$form.css({"height": "250px"}).before(`<button id="fish-all" class="button-default__2020 button-green__2020 btn-single__2020" type="button">Fish all</button>`);
+$form.css({ "height": "250px" }).before(`<button id="fish-all" class="button-default__2020 button-green__2020 btn-single__2020" type="button">Fish all</button>`);
 
 $("#fish-all").on("click", async function () {
 
     const delay = (min, max) => Math.floor(Math.random() * max) + min;
 
     $(this)
-    .prop("disabled", true)
-    .toggleClass("button-green__2020")
-    .toggleClass("button-purple__2020")
-    .html(`Processing...`);
+        .prop("disabled", true)
+        .toggleClass("button-green__2020")
+        .toggleClass("button-purple__2020")
+        .html(`Processing...`);
 
     $form.html(`
 <style>
@@ -79,9 +79,9 @@ $("#fish-all").on("click", async function () {
     }
 
     $(this)
-    .html("Done!")
-    .toggleClass("button-purple__2020")
-    .toggleClass("button-green__2020");
+        .html("Done!")
+        .toggleClass("button-purple__2020")
+        .toggleClass("button-green__2020");
 
 
     //-------------------------------------------------------------------------
@@ -134,7 +134,7 @@ $("#fish-all").on("click", async function () {
                 $.ajax({
                     type: "POST",
                     url: "/water/fishing.phtml",
-                    data: {"go_fish": "1"},
+                    data: { "go_fish": "1" },
                     success: data => {
                         const response = $.parseHTML(data);
                         const outcome = $(response).find(".page-title__2020 ~ p").text();

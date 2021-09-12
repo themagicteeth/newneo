@@ -8,7 +8,6 @@
 // @grant          none
 // ==/UserScript==
 
-
 // Set these to whatever you want
 const BET = 21;
 const ITEM = 'Usukicon Y23 Goodie Bag';

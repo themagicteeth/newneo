@@ -29,11 +29,11 @@ if (hasPremium && $premium.exists()) {
     function getPremiumStats() {
         return new Promise((resolve, reject) => {
             $.ajax({
-                type : "GET",
-                async : true,
-                url : "/premium",
-                timeout : 10000,
-                dataFilter : data => {
+                type: "GET",
+                async: true,
+                url: "/premium",
+                timeout: 10000,
+                dataFilter: data => {
                     const response = $.parseHTML(data);
                     let stats = {};
                     $(response).find(".bankroll-mid p").each(function (index, element) {
@@ -66,7 +66,7 @@ if (hasPremium && $premium.exists()) {
                     });
                     resolve(stats);
                 },
-                error : data => {
+                error: data => {
                     console.log(data);
                     reject("Request timed out");
                 }
@@ -197,17 +197,17 @@ if (hasPremium && $premium.exists()) {
 
 
     function reposition() {
-        const pWidth = parseFloat($premium.css("width")),
-            pHeight = parseFloat($premium.css("height")),
-            pTop = $premium.position().top,
-            pLeft = $premium.position().left,
-            toolbarWidth = parseFloat($menu.css("width")),
-            top = pHeight + pTop + 5,
-            left = pWidth + pLeft - toolbarWidth;
+        const pWidth = parseFloat($premium.css("width"));
+        const pHeight = parseFloat($premium.css("height"));
+        const pTop = $premium.position().top;
+        const pLeft = $premium.position().left;
+        const toolbarWidth = parseFloat($menu.css("width"));
+        const top = pHeight + pTop + 5;
+        const left = pWidth + pLeft - toolbarWidth;
 
         $menu.css({
-            "top" : `${top}px`,
-            "left" : `${left}px`
+            "top": `${top}px`,
+            "left": `${left}px`
         });
     }
 

@@ -80,7 +80,7 @@ if (location.search) {
 $("h1:contains('Shop Wizard')").html("Cheat Shop Wizard").parent().after(`<br><div style="font-size: 11pt; font-family: MuseoSansRounded500, Arial, sans-serif; width: 90%; margin: 5px auto; text-align: center;">Userscript is active! You can now refresh search results after a search.<br><br>Also, this wizard doesn't give a shit about "Ancient laws of magic" and<br>allows you to use him during a quest anyway. Fuck the faerie queen!<br><br>This userscript was originally written by <b>Rippy</b> of the r/neopets discord server.</div>`);
 
 // Handlers
-$("#shopwizard").on("keydown", function (e) {
+$("#shopwizard").on("keydown", (e) => {
     // Submit on pressing enter
     if (e.which === 13) {
         $("#submit_wizard").click();
@@ -88,7 +88,7 @@ $("#shopwizard").on("keydown", function (e) {
 });
 
 let resultsMaxHeight = 0;
-$("#submit_wizard, #refreshresults").on("click", function () {
+$("#submit_wizard, #refreshresults").on("click", () => {
 
     $("#divRefresh").show();
 
@@ -96,19 +96,19 @@ $("#submit_wizard, #refreshresults").on("click", function () {
     toggleButton($("#submit_wizard"), "disable");
 
     $.ajax({
-        type : "POST",
-        url : "/np-templates/ajax/wizard.php",
-        dataType : "html",
-        data : {
-            "type" : "process_wizard",
-            "feedset" : 0,
-            "shopwizard" : $("#shopwizard").val(),
-            "table" : $("#wizard-area option:selected").val(),
-            "criteria" : $("#criteria option:selected").val(),
-            "min_price" : $("#min_price").val(),
-            "max_price" : $("#max_price").val()
+        type: "POST",
+        url: "/np-templates/ajax/wizard.php",
+        dataType: "html",
+        data: {
+            "type": "process_wizard",
+            "feedset": 0,
+            "shopwizard": $("#shopwizard").val(),
+            "table": $("#wizard-area option:selected").val(),
+            "criteria": $("#criteria option:selected").val(),
+            "min_price": $("#min_price").val(),
+            "max_price": $("#max_price").val()
         },
-        success : function (response) {
+        success: (response) => {
             $("#bypassResults").html(response);
             toggleButton($("#refreshresults"), "enable");
             toggleButton($("#submit_wizard"), "enable");
@@ -118,14 +118,14 @@ $("#submit_wizard, #refreshresults").on("click", function () {
             if (height > resultsMaxHeight) {
                 resultsMaxHeight = height;
             }
-            $("#bypassResults").css({"height" : resultsMaxHeight});
+            $("#bypassResults").css({ "height": resultsMaxHeight });
 
             // scroll to results (comment out if annoying)
             $("html, body").animate({
-                scrollTop : $("#divRefresh").offset().top - 70
+                scrollTop: $("#divRefresh").offset().top - 70
             }, 200);
         },
-        error : function () {
+        error: () => {
             alert("Error");
             toggleButton($("#refreshresults"), "enable");
             toggleButton($("#submit_wizard"), "enable");

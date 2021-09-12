@@ -9,16 +9,16 @@
 // @grant        none
 // ==/UserScript==
 
-var userName = $('.user a').html();
-var minSearchSpeed = 2000;
-var maxSearchSpeed = 5000;
+const userName = $('.user a').html();
+const minSearchSpeed = 2000;
+let maxSearchSpeed = 5000;
 
-var lowerPrice = 0;
-var finalPrice = 0;
+let lowerPrice = 0;
+let finalPrice = 0;
 
-var banned = false;
+let banned = false;
 
-var waitForResults;
+let waitForResults;
 
 console.log(userName);
 
@@ -76,39 +76,39 @@ $('#reduceByAll').css({
 });
 
 //click functions
-$('#ignoreAll').click(function() {
+$('#ignoreAll').click(() => {
     ignoreAll = $('#ignoreAll').is(':checked');
     if (ignoreAll)
         $('.itemIgnore').prop('checked', true);
     else
         $('.itemIgnore').prop('checked', false);
 });
-$('#repriceAll').click(function() {
+$('#repriceAll').click(() => {
     repriceAll = $('#repriceAll').is(':checked');
     if (repriceAll)
         $('.itemReprice').prop('checked', true);
     else
         $('.itemReprice').prop('checked', false);
 });
-$('#lowerOwnAll').click(function() {
+$('#lowerOwnAll').click(() => {
     repriceAll = $('#lowerOwnAll').is(':checked');
     if (repriceAll)
         $('.itemLowerOwn').prop('checked', true);
     else
         $('.itemLowerOwn').prop('checked', false);
 });
-$('#reduceByAll').change(function() {
+$('#reduceByAll').change(() => {
     $('.itemReduceBy').val($('#reduceByAll').val());
 });
-$('#rateAll').change(function() {
+$('#rateAll').change(() => {
     $('.itemRate').val($('#rateAll').val());
 });
-$('#searchTypeAll').change(function() {
+$('#searchTypeAll').change(() => {
     $('.itemSearchType').val($('#searchTypeAll').val());
 });
 
 //table rows
-$('form[action="process_market.phtml"] table tbody tr').not(':first').not(':last').each(function() {
+$('form[action="process_market.phtml"] table tbody tr').not(':first').not(':last').each(function () {
     $(this).append(
         '<td width="50" align="center" bgcolor="#ffffcc">' +
         '<input class="itemIgnore" type="checkbox">' +
@@ -143,18 +143,18 @@ $('.itemReduceBy').css({
 });
 
 //autoprice button function
-$('#autoPrice').click(function() {
+$('#autoPrice').click(() => {
     banned = false;
     lowerPrice = parseInt($('#lowerPrice').val());
     finalPrice = parseInt($('#finalPrice').val());
     if ($('.sswdrop.panel_hidden').length)
         $('#sswmenu div.imgmenu').click();
-    $('form[action="process_market.phtml"] table tbody tr').not(':first').not(':last').each(function() {
+    $('form[action="process_market.phtml"] table tbody tr').not(':first').not(':last').each(function () {
         if ($(this).find('td input').val() == 0 || $(this).find('.itemReprice:eq(0)').is(':checked'))
             $(document).queue('prices', createPrice($(this)));
     });
 
-    $(document).queue('prices', function() {
+    $(document).queue('prices', () => {
         console.log("finished pricing");
     });
 
@@ -162,7 +162,7 @@ $('#autoPrice').click(function() {
 });
 
 function createPrice(item) {
-    return function(next) {
+    return (next) => {
         doPrice(item, next);
     };
 }
@@ -181,8 +181,8 @@ function doPrice(item, next) {
         next();
     } else {
         submitted = submitSSW(itemName, searchType);
-        waitForResults = setInterval(function() {
-            var gotResults = !submitted;
+        waitForResults = setInterval(() => {
+            let gotResults = !submitted;
             if (!gotResults)
                 gotResults = checkForNoSearchDeduction(item, searchType);
             if (!gotResults)
@@ -198,10 +198,6 @@ function doPrice(item, next) {
                 moveToNextItem(next);
         }, 100);
     }
-}
-
-function processItem() {
-
 }
 
 function submitSSW(itemName, searchType) {
@@ -259,13 +255,11 @@ function checkForError() {
 
 function checkSearchLimit(item) {
     message = $('#results b').first().html();
-    if (message != null) {
-        if (message.indexOf("Whoa there") > -1) {
-            waitTime = parseInt($('#results p.pmod b').html());
-            console.log("Hit search limit, setting banned");
-            banned = true;
-            return true;
-        }
+    if (message != null && message.indexOf("Whoa there") > -1) {
+        waitTime = parseInt($('#results p.pmod b').html());
+        console.log("Hit search limit, setting banned");
+        banned = true;
+        return true;
     }
     return false;
 }
@@ -280,7 +274,7 @@ function moveToNextItem(next, searchType) {
     if (searchType == "none") {
         next();
     } else {
-        setTimeout(function() {
+        setTimeout(() => {
             console.log('pausing for next item');
             next();
         }, getRandomWait());
@@ -305,16 +299,13 @@ function setLowestPrice(item, searchType) {
     else
         amount = Math.round(price * (reduceBy / 100));
 
-    console.log("Setting price lowest price - " + amount);
+    console.log(`Setting price lowest price - ${amount}`);
 
     if (price > 1) price -= amount;
 
-    if (lowerPrice > 0 && finalPrice > 0) {
-        if (price < lowerPrice)
-            price = finalPrice;
-    }
+    if (lowerPrice > 0 && finalPrice > 0 && price < lowerPrice) price = finalPrice;
     if ($('#results_table tbody tr').not(':first').first().find('td a').first().html() != userName || item.find('.itemLowerOwn:eq(0)').is(':checked')) {
-        console.log("Setting price to " + price);
+        console.log(`Setting price to ${price}`);
         item.find('td input').first().val(price);
     }
 }
@@ -325,16 +316,14 @@ function addPriceCheck(item) {
 }
 
 function addLowestPriceLinks(item) {
-    var lowestPriceUrls = "";
-    var lowestPrice = 0;
-    var secondLowest = 0;
-    $('#results_table tbody tr').not(':first').each(function() {
+    let lowestPriceUrls = "";
+    $('#results_table tbody tr').not(':first').each(function () {
         additionalClass = "";
         if ($(this).find('td a').first().html() == userName) {
             console.log("adding class to your price");
             additionalClass = "yourPrice";
         }
-        lowestPriceUrls += '<a class="lowestPriceUrl ' + additionalClass + '" href="' + $(this).find('td a').first().attr('href') + '">' + $(this).find('td:nth-child(3)').html() + '</a><br>';
+        lowestPriceUrls += `<a class="lowestPriceUrl ${additionalClass}" href="${$(this).find('td a').first().attr('href')}">${$(this).find('td:nth-child(3)').html()}</a><br>`;
     });
     item.find('.lowestPriceCell:eq(0)').html(lowestPriceUrls);
     findUnderpriced(item.find('.lowestPriceCell'));
@@ -351,12 +340,12 @@ function findUnderpriced(item) {
     secondUrl = item.find('.lowestPriceUrl:eq(1)');
     lowestPrice = firstUrl.html().replace(",", "").replace(" NP", "");
     secondLowest = secondUrl.html().replace(",", "").replace(" NP", "");
-    console.log('lowestPrice = ' + lowestPrice);
-    console.log('secondLowest = ' + secondLowest);
+    console.log(`lowestPrice = ${lowestPrice}`);
+    console.log(`secondLowest = ${secondLowest}`);
 
     if (lowestPrice > 0 && secondLowest > 0) {
         priceDiff = (1 - (lowestPrice / secondLowest)) * 100;
-        console.log('priceDiff = ' + priceDiff);
+        console.log(`priceDiff = ${priceDiff}`);
         if (priceDiff >= parseInt($('#lowDiff').val())) {
             console.log("large difference between two lowest prices");
             firstUrl.addClass('redPrice');

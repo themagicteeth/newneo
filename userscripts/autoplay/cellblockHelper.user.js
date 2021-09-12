@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Neopets - Cellblock Helper
+// @name         Cellblock Helper
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  This tool is designed to help you NOT make the BAD moves and DO make the GOOD moves! by ko_neo
@@ -17,31 +17,31 @@ const myBlock = 'http://images.neopets.com/games/cellblock/merridell-small.gif';
 const enemyBlock = 'http://images.neopets.com/games/cellblock/darigan-small.gif';
 const openBlock = 'http://images.neopets.com/games/cellblock/blank.gif';
 
-var coords = [];
-var right = [];
-var left = [];
-var down = [];
-var up = [];
-var upRight = [];
-var upLeft = [];
-var downRight = [];
-var downLeft = [];
-var iter = -1;
-var lock = false;
-var lock2 = false;
-var min=1;
-var max=1.5;
-var random = Math.random() * (+max - +min) + +min;
+const coords = [];
+const right = [];
+const left = [];
+const down = [];
+const up = [];
+const upRight = [];
+const upLeft = [];
+const downRight = [];
+const downLeft = [];
+let iter = -1;
+let lock = false;
+let lock2 = false;
+let min = 1;
+let max = 1.5;
+let random = Math.random() * (+max - +min) + +min;
 
 function storeCoordinates(xVal, yVal, tag, array, origTag, iter) {
-    array.push({x: xVal, y: yVal, tag: tag, orig: origTag, iter: iter});
+    array.push({ x: xVal, y: yVal, tag: tag, orig: origTag, iter: iter });
 }
 
 function getGridRef(x, y) {
-    return $( '#neopost > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(' + x + ') > td:nth-child(' + y + ')' );
+    return $(`#neopost > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(${x}) > td:nth-child(${y})`);
 }
 
-setTimeout(function(){
+setTimeout(() => {
     // Load grid
     for (let i = 1; i < 11; i++) {
         for (let j = 1; j < 11; j++) {
@@ -129,7 +129,7 @@ setTimeout(function(){
     checkCombo(upLeft);
     checkCombo(downRight);
     checkCombo(downLeft);
-}, random*100);
+}, random * 100);
 function checkCombo(thisArray) {
     lock = false;
     lock2 = false;
