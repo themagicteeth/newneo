@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-$("form[action='book_neolodge.phtml']").after(`<br><p><b>Step 5.</b> Or alternatively, fuck all of the above and just click on this button instead.</p><br><div style="text-align: center"><button id="book-all" type="button" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; padding: 10px;">I'm a fucking terrible owner.<br> Please send all my slaves to die in<br>Cockroach Towers for 28 nights.</div><br><br><div id="sad-pets" style="text-align: center;"></div><br><div style="text-align:center;"><i>Don't do this to us!</i></div>`);
+$("form[action='book_neolodge.phtml']").after(`<br><p><b>Step 5.</b> Or alternatively, click here to check-in all pets.</p><br><div style="text-align: center"><button id="book-all" type="button" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; padding: 10px;">Please send all my pets to<br>Cockroach Towers for 28 nights.</div>`);
 
 const username = appInsightsUserName || $(".user a[href*='/userlookup']").text();
 let pets = [];
@@ -42,7 +42,7 @@ $("#book-all").on("click", function () {
                         }
                     }
                 });
-            }, 1000);
+            }, 1_000);
         }
     })
 });
