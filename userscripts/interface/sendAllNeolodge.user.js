@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Send All Pets
 // @namespace    Neoscripts
-// @version      1.0.1
+// @version      1.0.2
 // @description  Because you can never be too lazy. Sends all your neopets to the lodge with just one click!
 // @author       -
 // @match        *://www.neopets.com/neolodge.phtml
 // @grant        none
 // ==/UserScript==
 
-$("form[action='book_neolodge.phtml']").after(`<br><p><b>Step 5.</b> Or alternatively, click here to check-in all pets.</p><br><div style="text-align: center"><button id="book-all" type="button" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; padding: 10px;">Please send all my pets to<br>Cockroach Towers for 28 nights.</div>`);
+$("form[action='book_neolodge.phtml']").after(`<br><p><b>Step 5.</b> Alternatively, click here to check-in all pets.</p><br><div style="text-align: center"><button id="book-all" type="button">Send all pets to<br>Cockroach Towers for 28 nights.</div>`);
 
 const username = appInsightsUserName || $(".user a[href*='/userlookup']").text();
 let pets = [];
