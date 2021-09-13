@@ -12,27 +12,26 @@
 // @description Auto buy for Defense
 // ==/UserScript==
 
-
 const itemsToBuy = [
-    "Thyoras Tear",
-    "Rainbow Scorchstone",
-    "Purple Scorchstone",
-    "Squishy Shoyru Healing Stone",
-    "Bag of Lenny Healing Seeds",
-    "Kaylas Magic Cloak",
-    "Superior Reflection Shield",
-    "Ultra Dual Shovel",
-    "Ultimate Dark Reflectorb",
-    "Flame Reflectozap",
-    "Mega U-Bend",
-    "Triple Turbo Dryer"
-  ]
-  
-  if (document.URL.includes("objects")) {
-   const FROM = 9000
-   const TO = 17000
-  
-   const refreshTimes = Math.floor(Math.random() * parseFloat(TO - FROM)) + parseFloat(FROM)
-  
-   buyItem(itemsToBuy, refreshTimes) 
-  }
+  "Thyoras Tear",
+  "Rainbow Scorchstone",
+  "Purple Scorchstone",
+  "Squishy Shoyru Healing Stone",
+  "Bag of Lenny Healing Seeds",
+  "Kaylas Magic Cloak",
+  "Superior Reflection Shield",
+  "Ultra Dual Shovel",
+  "Ultimate Dark Reflectorb",
+  "Flame Reflectozap",
+  "Mega U-Bend",
+  "Triple Turbo Dryer"
+]
+
+if (document.URL.includes("objects")) {
+  const FROM = 9_000
+  const TO = 17_000
+
+  const refreshTimes = Math.floor(Math.random() * parseFloat(TO - FROM)) + parseFloat(FROM)
+
+  buyItem(itemsToBuy, refreshTimes)
+}

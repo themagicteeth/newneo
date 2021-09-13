@@ -29,8 +29,8 @@ const itemsToBuy = [
 ]
 
 if (document.URL.includes("objects")) {
-    const FROM = 9000
-    const TO = 17000
+    const FROM = 9_000
+    const TO = 17_000
 
     const refreshTimes = Math.floor(Math.random() * parseFloat(TO - FROM)) + parseFloat(FROM)
 

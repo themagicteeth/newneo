@@ -2,7 +2,7 @@ const url = document.URL;
 const OCR = true;
 const return_ab = true;
 const min = 800;
-const max = 1500;
+const max = 1_500;
 const html = $('html').html();
 
 
@@ -11,7 +11,7 @@ if (html.includes('SOLD OUT!') || html.includes('five seconds')) {
 } else if (html.includes('I accept your offer')) {
     setTimeout(() => {
         document.querySelector("#container__2020 > div.shop-bg").click()
-    }, 1000);
+    }, 1_000);
 }
 
 
@@ -19,7 +19,7 @@ function buyItem(itemsToBuy, refreshDelay) {
     const itemsInStock = []
     document.querySelectorAll('.item-img').forEach(item => itemsInStock.push(item.getAttribute('data-name')));
     if (itemsInStock === []) {
-        setTimeout(location.reload.bind(location), 20000);
+        setTimeout(location.reload.bind(location), 20_000);
     } else {
         const toBuy = itemsToBuy.filter(item => itemsInStock.includes(item));
         if (toBuy.length === 0) {
