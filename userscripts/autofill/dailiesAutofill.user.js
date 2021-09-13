@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dailies Autofill
 // @author       -
-// @version      1.0.0
+// @version      1.0.1
 // @namespace    Neoscripts
 // @description  Auto selects multi-choice options for Wise King, Grumpy King, Symol Hole, Turmaculus, and Meteor.
 // @match        *://www.neopets.com/medieval/wiseking.phtml
@@ -31,7 +31,7 @@ if (document.URL.includes("grumpyking")) {
 }
 
 //Turmaculus
-if (document.URL.includes("turmaculus")){
+if (document.URL.includes("turmaculus")) {
     const $select = $("select[name='wakeup']");
 
     $select.each((index, element) => {
@@ -42,7 +42,7 @@ if (document.URL.includes("turmaculus")){
 }
 
 //Meteor
-if(document.URL.includes("meteor")){
+if (document.URL.includes("meteor")) {
     const $form = $("form");
 
     $form.find("select").each((index, element) => {

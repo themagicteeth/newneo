@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Lottomatic
-// @version      1.0.0
+// @version      1.0.1
 // @description  Generate lotto numbers with minimal overlap
 // @author       -
 // @namespace    Neoscripts
@@ -82,9 +82,7 @@
         });
         $('td[width=160]').append(refreshbtn);
 
-        if (!numbers)
-            generate();
-        else
-            populate();
+        if (!numbers) { generate(); }
+        else { populate(); }
     });
 })();

@@ -2,7 +2,7 @@
 // @name           Shenkuu Lunar Temple Solver
 // @namespace      Neoscripts
 // @description    Autosolver for the Shenkuu Lunar Temple
-// @version        1.0.0
+// @version        1.0.1
 // @author         -
 // @match          *://www.neopets.com/shenkuu/lunar/?show=puzzle
 // @grant          none
@@ -22,14 +22,13 @@ const angleList = [0, 12, 34, 57, 79, 102, 124, 147, 169, 192, 214, 237, 259, 28
 let answer = null;
 
 for (var i = 0; i < angleList.length; i++) {
-    if (i <= 7) {
-        if (angle >= angleList[i] && angle < angleList[i + 1]) {
+    if (angle >= angleList[i] && angle < angleList[i + 1]) {
+        if (i <= 7) {
             console.log(`2nd row, #${i + 1} from left`);
             answer = i + 8;
             break;
         }
-    } else if (i <= 15) {
-        if (angle >= angleList[i] && angle < angleList[i + 1]) {
+        else if (i <= 15) {
             console.log(`1st row, #${i - 7} from left`);
             answer = i - 8;
             break;
