@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Send All Pets
 // @namespace    Neoscripts
-// @version      2021.03.25
+// @version      1.0.1
 // @description  Because you can never be too lazy. Sends all your neopets to the lodge with just one click!
 // @author       -
 // @match        *://www.neopets.com/neolodge.phtml
